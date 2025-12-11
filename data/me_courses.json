@@ -1,0 +1,919 @@
+[
+  {
+    "course_id": "ME 170",
+    "subject": "ME",
+    "title": "Computer-Aided Design",
+    "raw_description": "Geometry and topology of engineered components: creation of engineering models and their presentation in standard 2D blueprint form and as 3D wire-frame and shaded solids; meshed topologies for engineering analysis and tool-path generation for component manufacture; ISO and ANSI standards for coordinate dimensioning and tolerancing; geometric dimensioning and tolerancing. Use of solid- modeling software for creating associative models at the component and assembly levels with automatic blueprint creation, interference checking, and linked bill of materials. Credit is not given towards graduation for both ME 170 and SE 101 .",
+    "prerequisites": null,
+    "topics": [
+      "engineering materials",
+      "computer-aided design",
+      "geometric dimensioning and tolerancing"
+    ],
+    "credit_hours": 3,
+    "embedding_text": "ME 170 Computer-Aided Design. Geometry and topology of engineered components: creation of engineering models and their presentation in standard 2D blueprint form and as 3D wire-frame and shaded solids; meshed topologies for engineering analysis and tool-path generation for component manufacture; ISO and ANSI standards for coordinate dimensioning and tolerancing; geometric dimensioning and tolerancing. Use of solid- modeling software for creating associative models at the component and assembly levels with automatic blueprint creation, interference checking, and linked bill of materials. Credit is not given towards graduation for both ME 170 and SE 101 ."
+  },
+  {
+    "course_id": "ME 199",
+    "subject": "ME",
+    "title": "Undergraduate Open Seminar",
+    "raw_description": "Undergraduate Open Seminar. May be repeated.",
+    "prerequisites": null,
+    "topics": [],
+    "credit_hours": "1 OR 2 OR 3 OR 4 OR 5",
+    "embedding_text": "ME 199 Undergraduate Open Seminar. Undergraduate Open Seminar. May be repeated."
+  },
+  {
+    "course_id": "ME 200",
+    "subject": "ME",
+    "title": "Thermodynamics",
+    "raw_description": "Classical thermodynamics through the second law; system and control- volume analyses of thermodynamic processes; irreversibility and availability; relations for ideal gas mixtures. Credit is not given toward graduation for ME 200 and either ABE 340 or CHBE 321 . Prerequisite: MATH 241.",
+    "prerequisites": "MATH 241",
+    "topics": [
+      "system dynamics",
+      "control systems"
+    ],
+    "credit_hours": 3,
+    "embedding_text": "ME 200 Thermodynamics. Classical thermodynamics through the second law; system and control- volume analyses of thermodynamic processes; irreversibility and availability; relations for ideal gas mixtures. Credit is not given toward graduation for ME 200 and either ABE 340 or CHBE 321 . Prerequisite: MATH 241."
+  },
+  {
+    "course_id": "ME 270",
+    "subject": "ME",
+    "title": "Design for Manufacturability",
+    "raw_description": "Introduction to DFM methodologies and tools; material selection (new and traditional materials); designing for primary manufacturing processes (cutting fundamentals, casting, forming, and shaping); designing with plastics (snap-\ufb01ts, integral hinges, etc.); design for assembly (DFA); geometric dimensioning and tolerancing (GD&T). Same as TAM 270. Prerequisite: ME 170 . ME and EM majors only.",
+    "prerequisites": "ME 170",
+    "topics": [
+      "engineering materials",
+      "geometric dimensioning and tolerancing",
+      "manufacturing processes"
+    ],
+    "credit_hours": 3,
+    "embedding_text": "ME 270 Design for Manufacturability. Introduction to DFM methodologies and tools; material selection (new and traditional materials); designing for primary manufacturing processes (cutting fundamentals, casting, forming, and shaping); designing with plastics (snap-\ufb01ts, integral hinges, etc.); design for assembly (DFA); geometric dimensioning and tolerancing (GD&T). Same as TAM 270. Prerequisite: ME 170 . ME and EM majors only."
+  },
+  {
+    "course_id": "ME 290",
+    "subject": "ME",
+    "title": "Seminar",
+    "raw_description": "Lectures by faculty and invited authorities, concerning the ethics and practices of mechanical engineering/engineering mechanics, as well as its relationship to other \ufb01elds of engineering, to economics, and to society. Offered fall term only. Approved for S/U grading only.",
+    "prerequisites": null,
+    "topics": [],
+    "credit_hours": 0,
+    "embedding_text": "ME 290 Seminar. Lectures by faculty and invited authorities, concerning the ethics and practices of mechanical engineering/engineering mechanics, as well as its relationship to other \ufb01elds of engineering, to economics, and to society. Offered fall term only. Approved for S/U grading only."
+  },
+  {
+    "course_id": "ME 297",
+    "subject": "ME",
+    "title": "Introductory Independent Study",
+    "raw_description": "Independent study and/or individual projects related to mechanical engineering. Approved for Letter and S/U grading. May be repeated to a maximum of 6 credit hours for letter grade; no limit for S/U grade mode. Prerequisite: Consent of Instructor.",
+    "prerequisites": "Consent of Instructor",
+    "topics": [],
+    "credit_hours": "1 OR 2 OR 3",
+    "embedding_text": "ME 297 Introductory Independent Study. Independent study and/or individual projects related to mechanical engineering. Approved for Letter and S/U grading. May be repeated to a maximum of 6 credit hours for letter grade; no limit for S/U grade mode. Prerequisite: Consent of Instructor."
+  },
+  {
+    "course_id": "ME 310",
+    "subject": "ME",
+    "title": "Fundamentals of Fluid Dynamics",
+    "raw_description": "Fundamentals of fluid mechanics with coverage of theory and applications of incompressible viscous and inviscid flows, and compressible high speed flows. Credit is not given toward graduation for: ME 310 and either TAM 335 or CEE 331 . Prerequisite: MATH 285 or MATH 441; credit or concurrent registration in ME 200 .",
+    "prerequisites": "MATH 285 or MATH 441; credit or concurrent registration in ME 200",
+    "topics": [
+      "fluid mechanics",
+      "incompressible flow",
+      "compressible flow",
+      "viscous flow",
+      "system dynamics"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 310 Fundamentals of Fluid Dynamics. Fundamentals of fluid mechanics with coverage of theory and applications of incompressible viscous and inviscid flows, and compressible high speed flows. Credit is not given toward graduation for: ME 310 and either TAM 335 or CEE 331 . Prerequisite: MATH 285 or MATH 441; credit or concurrent registration in ME 200 ."
+  },
+  {
+    "course_id": "ME 320",
+    "subject": "ME",
+    "title": "Heat Transfer",
+    "raw_description": "Principles and application of heat transfer by conduction, convection, and thermal radiation. Prerequisite: ME 200 ; ME 310 or TAM 335; MATH 285 or MATH 441.",
+    "prerequisites": "ME 200 ; ME 310 or TAM 335; MATH 285 or MATH 441",
+    "topics": [
+      "heat transfer",
+      "conduction",
+      "convection",
+      "thermal radiation"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 320 Heat Transfer. Principles and application of heat transfer by conduction, convection, and thermal radiation. Prerequisite: ME 200 ; ME 310 or TAM 335; MATH 285 or MATH 441."
+  },
+  {
+    "course_id": "ME 330",
+    "subject": "ME",
+    "title": "Engineering Materials",
+    "raw_description": "Structures of polymers, metals, and ceramics as the basis for their mechanical behavior. Manipulation of structure through such processes as heat treatment and solidi\ufb01cation. Mechanisms of material failure in service (yielding, fracture, fatigue, creep, corrosion, and wear) and simple design techniques to avoid these failures. Strategies for materials selection in design. Credit is not given for both ME 330 and either CEE 300 or MSE 280 . Prerequisite: CHEM 102 and TAM 251.",
+    "prerequisites": "CHEM 102 and TAM 251",
+    "topics": [
+      "engineering materials",
+      "fatigue",
+      "fracture",
+      "creep"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 330 Engineering Materials. Structures of polymers, metals, and ceramics as the basis for their mechanical behavior. Manipulation of structure through such processes as heat treatment and solidi\ufb01cation. Mechanisms of material failure in service (yielding, fracture, fatigue, creep, corrosion, and wear) and simple design techniques to avoid these failures. Strategies for materials selection in design. Credit is not given for both ME 330 and either CEE 300 or MSE 280 . Prerequisite: CHEM 102 and TAM 251."
+  },
+  {
+    "course_id": "ME 340",
+    "subject": "ME",
+    "title": "Dynamics of Mechanical Systems",
+    "raw_description": "Dynamic modeling of mechanical components and systems; time-domain and frequency-domain analyses of linear time-invariant systems; multi- degree-of-freedom systems; linearization of nonlinear systems. Credit is not given toward graduation for: ME 340 and either SE 320 or AE 353 . Prerequisite: MATH 285 or MATH 441; TAM 212; credit or concurrent registration in MATH 257 or MATH 415 or MATH 416; credit or concurrent registration in ECE 205 .",
+    "prerequisites": "MATH 285 or MATH 441; TAM 212; credit or concurrent registration in MATH 257 or MATH 415 or MATH 416; credit or concurrent registration in ECE 205",
+    "topics": [
+      "system dynamics"
+    ],
+    "credit_hours": 3.5,
+    "embedding_text": "ME 340 Dynamics of Mechanical Systems. Dynamic modeling of mechanical components and systems; time-domain and frequency-domain analyses of linear time-invariant systems; multi- degree-of-freedom systems; linearization of nonlinear systems. Credit is not given toward graduation for: ME 340 and either SE 320 or AE 353 . Prerequisite: MATH 285 or MATH 441; TAM 212; credit or concurrent registration in MATH 257 or MATH 415 or MATH 416; credit or concurrent registration in ECE 205 ."
+  },
+  {
+    "course_id": "ME 360",
+    "subject": "ME",
+    "title": "Signal Processing",
+    "raw_description": "Basic electromechanical techniques used in modern instrumentation and control systems. Use of transducers and actuators. Signal conditioning, grounding, and shielding. Analog and digital signal processing and feedback control methods with emphasis on frequency domain techniques. Frequency response of continuous and discrete systems. Credit is not given for both ME 360 and ABE 425 . Prerequisite: ME 340 .",
+    "prerequisites": "ME 340",
+    "topics": [
+      "control systems",
+      "signal processing"
+    ],
+    "credit_hours": 3.5,
+    "embedding_text": "ME 360 Signal Processing. Basic electromechanical techniques used in modern instrumentation and control systems. Use of transducers and actuators. Signal conditioning, grounding, and shielding. Analog and digital signal processing and feedback control methods with emphasis on frequency domain techniques. Frequency response of continuous and discrete systems. Credit is not given for both ME 360 and ABE 425 . Prerequisite: ME 340 ."
+  },
+  {
+    "course_id": "ME 370",
+    "subject": "ME",
+    "title": "Mechanical Design I",
+    "raw_description": "Kinematics and dynamics of machinery, including introduction to user-centered design and design thinking, analytical and computer- aided design of kinematics, dynamic force analysis, principle of virtual work, cam and gear design, and balancing. Project-based learning of multi-mechanism system design, analysis, fabrication, and evaluation. Prerequisite: ME 270 , TAM 212, and TAM 251.",
+    "prerequisites": "ME 270 , TAM 212, and TAM 251",
+    "topics": [
+      "system dynamics"
+    ],
+    "credit_hours": 3,
+    "embedding_text": "ME 370 Mechanical Design I. Kinematics and dynamics of machinery, including introduction to user-centered design and design thinking, analytical and computer- aided design of kinematics, dynamic force analysis, principle of virtual work, cam and gear design, and balancing. Project-based learning of multi-mechanism system design, analysis, fabrication, and evaluation. Prerequisite: ME 270 , TAM 212, and TAM 251."
+  },
+  {
+    "course_id": "ME 371",
+    "subject": "ME",
+    "title": "Mechanical Design II",
+    "raw_description": "Design and analysis of machinery for load-bearing and power transmission. Consideration of material failure modes, including yielding, fracture, and fatigue. Design and selection of machine elements: threaded fasteners, springs, rolling-element bearings, fluid \ufb01lm lubrication, gears and friction drives. Prerequisite: ME 370 ; CEE 300 /TAM 324 or credit or concurrent registration in ME 330 .",
+    "prerequisites": "ME 370 ; CEE 300 /TAM 324 or credit or concurrent registration in ME 330",
+    "topics": [
+      "fatigue",
+      "fracture"
+    ],
+    "credit_hours": 3,
+    "embedding_text": "ME 371 Mechanical Design II. Design and analysis of machinery for load-bearing and power transmission. Consideration of material failure modes, including yielding, fracture, and fatigue. Design and selection of machine elements: threaded fasteners, springs, rolling-element bearings, fluid \ufb01lm lubrication, gears and friction drives. Prerequisite: ME 370 ; CEE 300 /TAM 324 or credit or concurrent registration in ME 330 ."
+  },
+  {
+    "course_id": "ME 400",
+    "subject": "ME",
+    "title": "Energy Conversion Systems",
+    "raw_description": "Processes and systems for energy conversion, including power and refrigeration cycles, air conditioning, thermoelectrics and fuel cells; ideal- gas mixtures and psychrometrics. 3 undergraduate hours. 4 graduate hours. Prerequisite: ME 200 . 2 ME - Mechanical Engineering",
+    "prerequisites": "ME 200",
+    "topics": [
+      "energy conversion"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 400 Energy Conversion Systems. Processes and systems for energy conversion, including power and refrigeration cycles, air conditioning, thermoelectrics and fuel cells; ideal- gas mixtures and psychrometrics. 3 undergraduate hours. 4 graduate hours. Prerequisite: ME 200 . 2 ME - Mechanical Engineering"
+  },
+  {
+    "course_id": "ME 401",
+    "subject": "ME",
+    "title": "Refrigeration and Cryogenics",
+    "raw_description": "Theory of operation and design of equipment for production of low temperatures, from below ambient to near absolute zero; industrial, consumer, aerospace, medical, and research applications. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: Credit or concurrent registration in ME 320 .",
+    "prerequisites": "Credit or concurrent registration in ME 320",
+    "topics": [],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 401 Refrigeration and Cryogenics. Theory of operation and design of equipment for production of low temperatures, from below ambient to near absolute zero; industrial, consumer, aerospace, medical, and research applications. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: Credit or concurrent registration in ME 320 ."
+  },
+  {
+    "course_id": "ME 402",
+    "subject": "ME",
+    "title": "Design of Thermal Systems",
+    "raw_description": "Selection of components in fluid- and energy-processing systems to meet system-performance requirements; computer-aided design; system simulation; optimization techniques; investment economics and statistical combinations of operating conditions. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: Credit or concurrent registration in ME 320 .",
+    "prerequisites": "Credit or concurrent registration in ME 320",
+    "topics": [
+      "computer-aided design",
+      "optimization"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 402 Design of Thermal Systems. Selection of components in fluid- and energy-processing systems to meet system-performance requirements; computer-aided design; system simulation; optimization techniques; investment economics and statistical combinations of operating conditions. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: Credit or concurrent registration in ME 320 ."
+  },
+  {
+    "course_id": "ME 403",
+    "subject": "ME",
+    "title": "Internal Combustion Engines",
+    "raw_description": "Theory and analysis of reciprocating internal-combustion engines; fuels, carburetion, combustion, exhaust emissions, detonation, fuel injection, and factors affecting performance; laboratory work on variables that affect performance. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: Credit or concurrent registration in ME 400 or ABE 466 .",
+    "prerequisites": "Credit or concurrent registration in ME 400 or ABE 466",
+    "topics": [
+      "internal combustion engines"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 403 Internal Combustion Engines. Theory and analysis of reciprocating internal-combustion engines; fuels, carburetion, combustion, exhaust emissions, detonation, fuel injection, and factors affecting performance; laboratory work on variables that affect performance. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: Credit or concurrent registration in ME 400 or ABE 466 ."
+  },
+  {
+    "course_id": "ME 404",
+    "subject": "ME",
+    "title": "Intermediate Thermodynamics",
+    "raw_description": "Classical thermodynamics, including the TdS equations and the Maxwell relations; development of thermodynamic property relations, behavior of real gases, thermodynamics of mixtures, phase equilibrium and chemical reactions and equilibrium with an emphasis on combustion reactions; statistical thermodynamics including the effect of molecular and atomic structure, statistical concepts and distributions, calculation of thermodynamic properties of gas-phase atoms and molecules, kinetic theory of gases, and vibrations in crystals and the electron gas in metals; selected applications. 4 undergraduate hours. 4 graduate hours. Credit is not given for both ME 404 and any of PHYS 427, CHEM 442 , or CHEM 444 . Prerequisite: ME 200 .",
+    "prerequisites": "ME 200",
+    "topics": [
+      "system dynamics"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 404 Intermediate Thermodynamics. Classical thermodynamics, including the TdS equations and the Maxwell relations; development of thermodynamic property relations, behavior of real gases, thermodynamics of mixtures, phase equilibrium and chemical reactions and equilibrium with an emphasis on combustion reactions; statistical thermodynamics including the effect of molecular and atomic structure, statistical concepts and distributions, calculation of thermodynamic properties of gas-phase atoms and molecules, kinetic theory of gases, and vibrations in crystals and the electron gas in metals; selected applications. 4 undergraduate hours. 4 graduate hours. Credit is not given for both ME 404 and any of PHYS 427, CHEM 442 , or CHEM 444 . Prerequisite: ME 200 ."
+  },
+  {
+    "course_id": "ME 410",
+    "subject": "ME",
+    "title": "Intermediate Gas Dynamics",
+    "raw_description": "Solution of internal compressible-flow problems by one-dimensional techniques, both steady and unsteady; flows with smooth and abrupt area change, with friction, with heat addition, and with mass addition; flows with weak and strong waves, multiple con\ufb01ned streams, and shock waves. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: ME 200 ; ME 310 , TAM 335 or AE 311 .",
+    "prerequisites": "ME 200 ; ME 310 , TAM 335 or AE 311",
+    "topics": [
+      "compressible flow",
+      "system dynamics"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 410 Intermediate Gas Dynamics. Solution of internal compressible-flow problems by one-dimensional techniques, both steady and unsteady; flows with smooth and abrupt area change, with friction, with heat addition, and with mass addition; flows with weak and strong waves, multiple con\ufb01ned streams, and shock waves. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: ME 200 ; ME 310 , TAM 335 or AE 311 ."
+  },
+  {
+    "course_id": "ME 411",
+    "subject": "ME",
+    "title": "Viscous Flow & Heat Transfer",
+    "raw_description": "Momentum and thermal transport in wall boundary-layer and free shear flows, solutions to the Navier-Stokes equations for heat conducting laminar and turbulent shear flows; similarity concepts; thermal boundary layers in ducts and high-speed aerodynamic boundary layers. Same as AE 412. 4 undergraduate hours. 4 graduate hours. Prerequisite: AE 311, ME 310 or TAM 335.",
+    "prerequisites": "AE 311, ME 310 or TAM 335",
+    "topics": [
+      "viscous flow",
+      "heat transfer"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 411 Viscous Flow & Heat Transfer. Momentum and thermal transport in wall boundary-layer and free shear flows, solutions to the Navier-Stokes equations for heat conducting laminar and turbulent shear flows; similarity concepts; thermal boundary layers in ducts and high-speed aerodynamic boundary layers. Same as AE 412. 4 undergraduate hours. 4 graduate hours. Prerequisite: AE 311, ME 310 or TAM 335."
+  },
+  {
+    "course_id": "ME 412",
+    "subject": "ME",
+    "title": "Numerical Thermo-Fluid Mechs",
+    "raw_description": "Numerical techniques for solving the equations governing conduction and convective heat transfer in steady and unsteady fluid flows: \ufb01nite-difference and \ufb01nite-volume techniques, basic algorithms, and applications to real-world fluid-flow and heat-transfer problems. Same as CSE 412 . 2 or 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: ME 310 OR TAM 335; ME 320 .",
+    "prerequisites": "ME 310 OR TAM 335; ME 320",
+    "topics": [
+      "heat transfer",
+      "conduction",
+      "numerical methods"
+    ],
+    "credit_hours": "2 OR 3 OR 4",
+    "embedding_text": "ME 412 Numerical Thermo-Fluid Mechs. Numerical techniques for solving the equations governing conduction and convective heat transfer in steady and unsteady fluid flows: \ufb01nite-difference and \ufb01nite-volume techniques, basic algorithms, and applications to real-world fluid-flow and heat-transfer problems. Same as CSE 412 . 2 or 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: ME 310 OR TAM 335; ME 320 ."
+  },
+  {
+    "course_id": "ME 420",
+    "subject": "ME",
+    "title": "Intermediate Heat Transfer",
+    "raw_description": "Conduction heat transfer, radiation heat transfer, mass transfer, phase change, heat exchangers; numerical methods. 4 undergraduate hours. 4 graduate hours. Prerequisite: ME 310 OR TAM 335; ME 320 .",
+    "prerequisites": "ME 310 OR TAM 335; ME 320",
+    "topics": [
+      "heat transfer",
+      "conduction",
+      "thermal radiation",
+      "numerical methods"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 420 Intermediate Heat Transfer. Conduction heat transfer, radiation heat transfer, mass transfer, phase change, heat exchangers; numerical methods. 4 undergraduate hours. 4 graduate hours. Prerequisite: ME 310 OR TAM 335; ME 320 ."
+  },
+  {
+    "course_id": "ME 430",
+    "subject": "ME",
+    "title": "Failure of Engrg Materials",
+    "raw_description": "Material anisotropy and elasto-plastic properties at the crystal level; microstructural basis for fatigue, fracture, and creep in metals, polymers, and ceramics; failure mechanisms and toughening in composites; structure and behavior of metal-matrix composites, ceramic-matrix composites, and polymer composites. 3 undergraduate hours. 3 or 4 graduate hours. Credit is not given toward graduation for: ME 430 and TAM 424. Prerequisite: ME 330 OR CEE 300 /TAM 324.",
+    "prerequisites": "ME 330 OR CEE 300 /TAM 324",
+    "topics": [
+      "engineering materials",
+      "fatigue",
+      "fracture",
+      "creep",
+      "composites"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 430 Failure of Engrg Materials. Material anisotropy and elasto-plastic properties at the crystal level; microstructural basis for fatigue, fracture, and creep in metals, polymers, and ceramics; failure mechanisms and toughening in composites; structure and behavior of metal-matrix composites, ceramic-matrix composites, and polymer composites. 3 undergraduate hours. 3 or 4 graduate hours. Credit is not given toward graduation for: ME 430 and TAM 424. Prerequisite: ME 330 OR CEE 300 /TAM 324."
+  },
+  {
+    "course_id": "ME 431",
+    "subject": "ME",
+    "title": "Mechanical Component Failure",
+    "raw_description": "Relationship of materials and mechanics concepts to the design of structures and components: elasticity, plasticity, thermal loading, creep, fatigue, fracture, and residual-life assessments as they relate to materials selection and design. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: ME 330 and ME 371 ; Recommended: ME 430 .",
+    "prerequisites": "ME 330 and ME 371 ; Recommended: ME 430",
+    "topics": [
+      "engineering materials",
+      "fatigue",
+      "fracture",
+      "creep"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 431 Mechanical Component Failure. Relationship of materials and mechanics concepts to the design of structures and components: elasticity, plasticity, thermal loading, creep, fatigue, fracture, and residual-life assessments as they relate to materials selection and design. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: ME 330 and ME 371 ; Recommended: ME 430 ."
+  },
+  {
+    "course_id": "ME 432",
+    "subject": "ME",
+    "title": "Fundamentals of Photovoltaics",
+    "raw_description": "In this course, we will develop a fundamental understanding of how solar cells convert light to electricity, how solar cells are made, how solar cell performance is evaluated, and the photovoltaic technologies that are currently on the market and/or under development. Using thermodynamics, materials physics, and engineering analysis we will assess and critique the potential and drawbacks of modern photovoltaic technologies, including single- and multi- crystalline silicon, tandem cells, CdTe, CIGS, PVT, bulk heterojunctions (organic), Graetzel cells, nanostructure-based, and third generation PV. 3 undergraduate hours. 4 graduate hours. Approved for Letter and S/U grading. Prerequisite: PHYS 212 and ME 330 or equivalent.",
+    "prerequisites": "PHYS 212 and ME 330 or equivalent",
+    "topics": [
+      "engineering materials",
+      "system dynamics"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 432 Fundamentals of Photovoltaics. In this course, we will develop a fundamental understanding of how solar cells convert light to electricity, how solar cells are made, how solar cell performance is evaluated, and the photovoltaic technologies that are currently on the market and/or under development. Using thermodynamics, materials physics, and engineering analysis we will assess and critique the potential and drawbacks of modern photovoltaic technologies, including single- and multi- crystalline silicon, tandem cells, CdTe, CIGS, PVT, bulk heterojunctions (organic), Graetzel cells, nanostructure-based, and third generation PV. 3 undergraduate hours. 4 graduate hours. Approved for Letter and S/U grading. Prerequisite: PHYS 212 and ME 330 or equivalent."
+  },
+  {
+    "course_id": "ME 440",
+    "subject": "ME",
+    "title": "Kinem & Dynamics of Mech Syst",
+    "raw_description": "Kinematics and dynamics of constrained rigid-body mechanical systems; use of modern computer-based analysis software packages. 3 undergraduate hours. 4 graduate hours. Prerequisite: ME 370 .",
+    "prerequisites": "ME 370",
+    "topics": [
+      "system dynamics"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 440 Kinem & Dynamics of Mech Syst. Kinematics and dynamics of constrained rigid-body mechanical systems; use of modern computer-based analysis software packages. 3 undergraduate hours. 4 graduate hours. Prerequisite: ME 370 ."
+  },
+  {
+    "course_id": "ME 445",
+    "subject": "ME",
+    "title": "Introduction to Robotics",
+    "raw_description": "Fundamentals of robotics including rigid motions; homogeneous transformations; forward and inverse kinematics; velocity kinematics; motion planning; trajectory generation; sensing, vision; control. Same as AE 482 and ECE 470. 4 undergraduate hours. 4 graduate hours. Prerequisite: One of MATH 225, MATH 257, MATH 418.",
+    "prerequisites": "One of MATH 225, MATH 257, MATH 418",
+    "topics": [
+      "robotics"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 445 Introduction to Robotics. Fundamentals of robotics including rigid motions; homogeneous transformations; forward and inverse kinematics; velocity kinematics; motion planning; trajectory generation; sensing, vision; control. Same as AE 482 and ECE 470. 4 undergraduate hours. 4 graduate hours. Prerequisite: One of MATH 225, MATH 257, MATH 418."
+  },
+  {
+    "course_id": "ME 446",
+    "subject": "ME",
+    "title": "Robot Dynamics and Control",
+    "raw_description": "Fundamental concepts and analytical methods for analysis and design of robot systems. Laboratory experiments complement theoretical development. Same as ECE 489 and SE 422. 4 undergraduate hours. 4 graduate hours. Prerequisite: SE 320. Recommended: ECE 470.",
+    "prerequisites": "SE 320",
+    "topics": [
+      "system dynamics",
+      "control systems",
+      "robotics"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 446 Robot Dynamics and Control. Fundamental concepts and analytical methods for analysis and design of robot systems. Laboratory experiments complement theoretical development. Same as ECE 489 and SE 422. 4 undergraduate hours. 4 graduate hours. Prerequisite: SE 320. Recommended: ECE 470."
+  },
+  {
+    "course_id": "ME 447",
+    "subject": "ME",
+    "title": "Computational Design and Dynamics of Soft Systems",
+    "raw_description": "Provides a hands-on introduction to modern modeling and simulations techniques for heterogeneous structures made of assemblies of soft, elastic slender elements. Such systems are ubiquitous in nature, from animal musculoskeletal architectures to 'birds-nest' composite materials. They are also becoming increasingly relevant in robotics. Students will implement in python their own Cosserat rods-based solver. The developed solver will be then coupled with evolutionary optimization techniques for design, and reinforcement learning for control. 4 undergraduate hours. 4 graduate hours. Prerequisite: CS 101 OR CS 125 ; MATH 415.",
+    "prerequisites": "CS 101 OR CS 125 ; MATH 415",
+    "topics": [
+      "engineering materials",
+      "system dynamics",
+      "control systems",
+      "robotics",
+      "optimization"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 447 Computational Design and Dynamics of Soft Systems. Provides a hands-on introduction to modern modeling and simulations techniques for heterogeneous structures made of assemblies of soft, elastic slender elements. Such systems are ubiquitous in nature, from animal musculoskeletal architectures to 'birds-nest' composite materials. They are also becoming increasingly relevant in robotics. Students will implement in python their own Cosserat rods-based solver. The developed solver will be then coupled with evolutionary optimization techniques for design, and reinforcement learning for control. 4 undergraduate hours. 4 graduate hours. Prerequisite: CS 101 OR CS 125 ; MATH 415."
+  },
+  {
+    "course_id": "ME 451",
+    "subject": "ME",
+    "title": "Computer-Aided Mfg Systems",
+    "raw_description": "The application of computer technology and operations research to manufacturing systems. Use of microprocessors for direct numeric control of machine tools, adaptive control and optimization, and integrated manufacturing systems. Applications of industrial robots. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: ME 270 . ME - Mechanical Engineering 3",
+    "prerequisites": "ME 270",
+    "topics": [
+      "manufacturing processes",
+      "control systems",
+      "robotics",
+      "optimization"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 451 Computer-Aided Mfg Systems. The application of computer technology and operations research to manufacturing systems. Use of microprocessors for direct numeric control of machine tools, adaptive control and optimization, and integrated manufacturing systems. Applications of industrial robots. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: ME 270 . ME - Mechanical Engineering 3"
+  },
+  {
+    "course_id": "ME 452",
+    "subject": "ME",
+    "title": "Num Control of Mfg Processes",
+    "raw_description": "Numerical control systems, manufacturing processes, principles and practices basic to numerical control, and programming methodology for numerical control. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 101 and ME 270 . ME 453 Data Science in Manufacturing Quality Control credit: 3 or 4 Hours. Manufacturing quality management in the big data era; quality improvement philosophies; statistical modeling of process quality; inferences about quality; statistical process control; control charts; machine learning and applications in quality engineering; quality classi\ufb01cation/prediction with machine learning; design and implementation of quality monitoring systems based on supervised learning; measurement system analysis (gage R&R study); design of experiments. 3 or 4 undergraduate hours. 3 or 4 graduate hours. Prerequisite: ME 270 ; either IE 300 or STAT 400; either MATH 257 or MATH 415. ME 455 Micromanufacturing Process & Automation credit: 3 or 4 Hours. Scaling laws in miniaturization, Micro-machine tools design and characterization, Micromanufacturing process modeling, simulation and automation, Micro-metrology and Micro-assembly systems. 3 undergraduate hours. 4 graduate hours. Prerequisite: ME 270 or equivalent or consent of instructor. ME 458 Additive Manufacturing and Product Design credit: 3 or 4 Hours. Additive manufacturing fundamentals, how and why to design products using additive manufacturing, theory, and practice of product innovation, modern product design. 3 undergraduate hours. 4 graduate hours. Prerequisite: ME 371 or consent of instructor. Senior or graduate standing, or instructor permission.",
+    "prerequisites": "CS 101 and ME 270",
+    "topics": [
+      "manufacturing processes",
+      "control systems",
+      "numerical methods"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 452 Num Control of Mfg Processes. Numerical control systems, manufacturing processes, principles and practices basic to numerical control, and programming methodology for numerical control. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: CS 101 and ME 270 . ME 453 Data Science in Manufacturing Quality Control credit: 3 or 4 Hours. Manufacturing quality management in the big data era; quality improvement philosophies; statistical modeling of process quality; inferences about quality; statistical process control; control charts; machine learning and applications in quality engineering; quality classi\ufb01cation/prediction with machine learning; design and implementation of quality monitoring systems based on supervised learning; measurement system analysis (gage R&R study); design of experiments. 3 or 4 undergraduate hours. 3 or 4 graduate hours. Prerequisite: ME 270 ; either IE 300 or STAT 400; either MATH 257 or MATH 415. ME 455 Micromanufacturing Process & Automation credit: 3 or 4 Hours. Scaling laws in miniaturization, Micro-machine tools design and characterization, Micromanufacturing process modeling, simulation and automation, Micro-metrology and Micro-assembly systems. 3 undergraduate hours. 4 graduate hours. Prerequisite: ME 270 or equivalent or consent of instructor. ME 458 Additive Manufacturing and Product Design credit: 3 or 4 Hours. Additive manufacturing fundamentals, how and why to design products using additive manufacturing, theory, and practice of product innovation, modern product design. 3 undergraduate hours. 4 graduate hours. Prerequisite: ME 371 or consent of instructor. Senior or graduate standing, or instructor permission."
+  },
+  {
+    "course_id": "ME 460",
+    "subject": "ME",
+    "title": "Industrial Control Systems",
+    "raw_description": "Industrial control techniques; case studies of industrial systems; design, selection, and maintenance of industrial control systems, including electromechanical, pneumatic, thermal, and hydraulic systems. 4 undergraduate hours. 4 graduate hours. Credit is not given for both ME 460 and ECE 486 . Prerequisite: ME 340 and ME 360 .",
+    "prerequisites": "ME 340 and ME 360",
+    "topics": [
+      "control systems"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 460 Industrial Control Systems. Industrial control techniques; case studies of industrial systems; design, selection, and maintenance of industrial control systems, including electromechanical, pneumatic, thermal, and hydraulic systems. 4 undergraduate hours. 4 graduate hours. Credit is not given for both ME 460 and ECE 486 . Prerequisite: ME 340 and ME 360 ."
+  },
+  {
+    "course_id": "ME 461",
+    "subject": "ME",
+    "title": "Computer Cntrl of Mech Systems",
+    "raw_description": "Microcomputer control of thermal and mechanical systems: sensors and transducers, signal transmission and conversion, and regulator actuation. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: ME 360 or ABE 425 .",
+    "prerequisites": "ME 360 or ABE 425",
+    "topics": [
+      "control systems"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 461 Computer Cntrl of Mech Systems. Microcomputer control of thermal and mechanical systems: sensors and transducers, signal transmission and conversion, and regulator actuation. 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: ME 360 or ABE 425 ."
+  },
+  {
+    "course_id": "ME 462",
+    "subject": "ME",
+    "title": "Advanced Computer Control",
+    "raw_description": "Computer-based design of modern real-time controllers through progression from basic theory to advanced control algorithms proven successful in applications. Both discrete and continuous time formats are employed and linked through sampled-data concepts. The course has 8 2-hour labs providing exposure to 1) controller enhancement through AI and machine learning, 2) the related MATLAB toolboxes, 3) controller implementation on modern computing platforms (GPUs and FPGAs), and 4) applications in aerospace, power generation, manufacturing, and other areas. The lecture focus will be on clear control problem statement, analytical expressions of the control laws solving the problem, and applicability limitations. The corresponding MATLAB-based controller design tools and applications will be provided in the labs. Rigorous mathematical proofs will be given in the lectures for only a few key results. 4 undergraduate hours. 4 graduate hours. Prerequisite: ME 360 .",
+    "prerequisites": "ME 360",
+    "topics": [
+      "manufacturing processes",
+      "control systems"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 462 Advanced Computer Control. Computer-based design of modern real-time controllers through progression from basic theory to advanced control algorithms proven successful in applications. Both discrete and continuous time formats are employed and linked through sampled-data concepts. The course has 8 2-hour labs providing exposure to 1) controller enhancement through AI and machine learning, 2) the related MATLAB toolboxes, 3) controller implementation on modern computing platforms (GPUs and FPGAs), and 4) applications in aerospace, power generation, manufacturing, and other areas. The lecture focus will be on clear control problem statement, analytical expressions of the control laws solving the problem, and applicability limitations. The corresponding MATLAB-based controller design tools and applications will be provided in the labs. Rigorous mathematical proofs will be given in the lectures for only a few key results. 4 undergraduate hours. 4 graduate hours. Prerequisite: ME 360 ."
+  },
+  {
+    "course_id": "ME 470",
+    "subject": "ME",
+    "title": "Senior Design Project",
+    "raw_description": "Solution of a real-world design problem: development, evaluation, and recommendation of alternative solutions subject to realistic constraints that include most of the following considerations: economics, environment, sustainability, manufacturability, ethics, health and safety, society, and politics. 3 undergraduate hours. No graduate credit. Prerequisite: Concurrent enrollment in no more than two required ME courses; completion of all required courses for ME students. Concurrent enrollment in no more than two required TAM courses; completion of all required courses for EM students. Departmental approval required. Restricted to students in the Mechanical Sci & Engineering department. Restricted to students with Senior class standing. This course satis\ufb01es the General Education Criteria for: Advanced Composition",
+    "prerequisites": "Concurrent enrollment in no more than two required ME courses; completion of all required courses for ME students",
+    "topics": [],
+    "credit_hours": 3,
+    "embedding_text": "ME 470 Senior Design Project. Solution of a real-world design problem: development, evaluation, and recommendation of alternative solutions subject to realistic constraints that include most of the following considerations: economics, environment, sustainability, manufacturability, ethics, health and safety, society, and politics. 3 undergraduate hours. No graduate credit. Prerequisite: Concurrent enrollment in no more than two required ME courses; completion of all required courses for ME students. Concurrent enrollment in no more than two required TAM courses; completion of all required courses for EM students. Departmental approval required. Restricted to students in the Mechanical Sci & Engineering department. Restricted to students with Senior class standing. This course satis\ufb01es the General Education Criteria for: Advanced Composition"
+  },
+  {
+    "course_id": "ME 471",
+    "subject": "ME",
+    "title": "Finite Element Analysis",
+    "raw_description": "The finite element method and its application to engineering problems: truss and frame structures, heat conduction, and linear elasticity; use of application software; overview of advanced topics such as structural dynamics, fluid flow, and nonlinear structural analysis. Same as AE 420 and CSE 451 . 3 or 4 undergraduate hours. 3 or 4 graduate hours. Credit is not given for both ME 471 and CEE 470 . Prerequisite: CS 101 and ME 371 or TAM 470. Alternatively, AE 370 for AE students.",
+    "prerequisites": "CS 101 and ME 371 or TAM 470",
+    "topics": [
+      "conduction",
+      "finite element analysis",
+      "system dynamics"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 471 Finite Element Analysis. The finite element method and its application to engineering problems: truss and frame structures, heat conduction, and linear elasticity; use of application software; overview of advanced topics such as structural dynamics, fluid flow, and nonlinear structural analysis. Same as AE 420 and CSE 451 . 3 or 4 undergraduate hours. 3 or 4 graduate hours. Credit is not given for both ME 471 and CEE 470 . Prerequisite: CS 101 and ME 371 or TAM 470. Alternatively, AE 370 for AE students."
+  },
+  {
+    "course_id": "ME 472",
+    "subject": "ME",
+    "title": "Introduction to Tribology",
+    "raw_description": "Friction, wear, and lubrication; engineering surfaces; surface properties and surface topography; Hertzian contacts and contact of rough surfaces; friction of surfaces in contact; wear and surface failures; boundary lubrication; fluid properties; hydrodynamic lubrication; elastohydrodynamic lubrication; bearing selection; introductory micro- and nanotribology. 3 undergraduate hours. 3 or 4 graduate hours.",
+    "prerequisites": null,
+    "topics": [],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 472 Introduction to Tribology. Friction, wear, and lubrication; engineering surfaces; surface properties and surface topography; Hertzian contacts and contact of rough surfaces; friction of surfaces in contact; wear and surface failures; boundary lubrication; fluid properties; hydrodynamic lubrication; elastohydrodynamic lubrication; bearing selection; introductory micro- and nanotribology. 3 undergraduate hours. 3 or 4 graduate hours."
+  },
+  {
+    "course_id": "ME 475",
+    "subject": "ME",
+    "title": "Bioinspired Design",
+    "raw_description": "The bioinspired design course offers interdisciplinary, advanced design and critical thinking experience. Students will work in teams to integrate biological knowledge into the engineering design process. The course uses case studies to show how biological solutions can be transferred into engineering design. The case studies will include themes such as locomotion, materials, and sensing. By the end of the course, students will be able to use analogical design concepts to engineer a prototype based on biological function. Same as IB 480 . 3 undergraduate hours. 4 graduate hours. Prerequisite: ME 370 or consent of instructor. Restricted to senior or graduate standing or consent of instructor. 4 ME - Mechanical Engineering",
+    "prerequisites": "ME 370 or consent of instructor",
+    "topics": [
+      "engineering materials"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 475 Bioinspired Design. The bioinspired design course offers interdisciplinary, advanced design and critical thinking experience. Students will work in teams to integrate biological knowledge into the engineering design process. The course uses case studies to show how biological solutions can be transferred into engineering design. The case studies will include themes such as locomotion, materials, and sensing. By the end of the course, students will be able to use analogical design concepts to engineer a prototype based on biological function. Same as IB 480 . 3 undergraduate hours. 4 graduate hours. Prerequisite: ME 370 or consent of instructor. Restricted to senior or graduate standing or consent of instructor. 4 ME - Mechanical Engineering"
+  },
+  {
+    "course_id": "ME 481",
+    "subject": "ME",
+    "title": "Whole-Body Musculoskel Biomech",
+    "raw_description": "Exploration of the human musculoskeletal system with an emphasis on the whole-body or organism level; modeling and analysis techniques for examining human movement, such as rigid-body modeling techniques, forward and inverse dynamics, and Lagrangian mechanics; examination of current topics, such as orthopedic biomechanics, prosthetics and orthotics, postural control, and locomotion; use of computerized motion- capture equipment and software to examine, simulate, and analyze human movement. Same as BIOE 481 . 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: TAM 212 and TAM 251.",
+    "prerequisites": "TAM 212 and TAM 251",
+    "topics": [
+      "system dynamics",
+      "control systems"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 481 Whole-Body Musculoskel Biomech. Exploration of the human musculoskeletal system with an emphasis on the whole-body or organism level; modeling and analysis techniques for examining human movement, such as rigid-body modeling techniques, forward and inverse dynamics, and Lagrangian mechanics; examination of current topics, such as orthopedic biomechanics, prosthetics and orthotics, postural control, and locomotion; use of computerized motion- capture equipment and software to examine, simulate, and analyze human movement. Same as BIOE 481 . 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: TAM 212 and TAM 251."
+  },
+  {
+    "course_id": "ME 482",
+    "subject": "ME",
+    "title": "Musculoskel Tissue Mechanics",
+    "raw_description": "Composition-structure-function relationships for musculoskeletal tissues, including bone, tendon, ligament, cartilage, and muscle; hierarchical structure of tissues from the macro- to nano-scales; relation of composition to mechanical properties of health and diseased tissue; experimental methods used to obtain mechanical properties. Same as BIOE 482 . 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: TAM 251.",
+    "prerequisites": "TAM 251",
+    "topics": [],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 482 Musculoskel Tissue Mechanics. Composition-structure-function relationships for musculoskeletal tissues, including bone, tendon, ligament, cartilage, and muscle; hierarchical structure of tissues from the macro- to nano-scales; relation of composition to mechanical properties of health and diseased tissue; experimental methods used to obtain mechanical properties. Same as BIOE 482 . 3 undergraduate hours. 3 or 4 graduate hours. Prerequisite: TAM 251."
+  },
+  {
+    "course_id": "ME 483",
+    "subject": "ME",
+    "title": "Mechanobiology",
+    "raw_description": "Integrative approach to mechanobiology; mechanics of cell adhesion; cytoskeletal structure and mechanics; mechanotransduction; mechanics of cell proliferation, apoptosis, cancer cells, and stem cells; aging; critical issues facing the mechanobiological sciences. 4 undergraduate hours. 4 graduate hours. Prerequisite: CHEM 102 and TAM 251.",
+    "prerequisites": "CHEM 102 and TAM 251",
+    "topics": [],
+    "credit_hours": 4,
+    "embedding_text": "ME 483 Mechanobiology. Integrative approach to mechanobiology; mechanics of cell adhesion; cytoskeletal structure and mechanics; mechanotransduction; mechanics of cell proliferation, apoptosis, cancer cells, and stem cells; aging; critical issues facing the mechanobiological sciences. 4 undergraduate hours. 4 graduate hours. Prerequisite: CHEM 102 and TAM 251."
+  },
+  {
+    "course_id": "ME 487",
+    "subject": "ME",
+    "title": "MEMS-NEMS Theory & Fabrication",
+    "raw_description": "Physical and chemical theory, design, and hands-on fabrication of micro- and nano-electromechanical systems (MEMS and NEMS); cleanroom fabrication theory, including general cleanroom safety, lithography, additive and subtractive processes, bulk and surface micromachining, deep reactive ion etching (DRIE), lithographic Galvanoformung Abformung (LIGA), packaging, scaling, actuators, and micro-nanofluids; fabrication of two take-home devices, such as piezoresistive sensors and microfluidic logic chips, that demonstrate advanced fabrication processing. 4 undergraduate hours. 4 graduate hours. Prerequisite: PHYS 212.",
+    "prerequisites": "PHYS 212",
+    "topics": [],
+    "credit_hours": 4,
+    "embedding_text": "ME 487 MEMS-NEMS Theory & Fabrication. Physical and chemical theory, design, and hands-on fabrication of micro- and nano-electromechanical systems (MEMS and NEMS); cleanroom fabrication theory, including general cleanroom safety, lithography, additive and subtractive processes, bulk and surface micromachining, deep reactive ion etching (DRIE), lithographic Galvanoformung Abformung (LIGA), packaging, scaling, actuators, and micro-nanofluids; fabrication of two take-home devices, such as piezoresistive sensors and microfluidic logic chips, that demonstrate advanced fabrication processing. 4 undergraduate hours. 4 graduate hours. Prerequisite: PHYS 212."
+  },
+  {
+    "course_id": "ME 497",
+    "subject": "ME",
+    "title": "Independent Study",
+    "raw_description": "Independent study of advanced problems related to mechanical engineering. 1 to 3 undergraduate hours. No graduate credit. May be repeated in separate terms to a maximum of 6 hours, as topics vary. Prerequisite: Consent of Instructor. Students with Junior or Senior standing.",
+    "prerequisites": "Consent of Instructor",
+    "topics": [],
+    "credit_hours": "1 OR 2 OR 3",
+    "embedding_text": "ME 497 Independent Study. Independent study of advanced problems related to mechanical engineering. 1 to 3 undergraduate hours. No graduate credit. May be repeated in separate terms to a maximum of 6 hours, as topics vary. Prerequisite: Consent of Instructor. Students with Junior or Senior standing."
+  },
+  {
+    "course_id": "ME 498",
+    "subject": "ME",
+    "title": "Special Topics",
+    "raw_description": "Subject offerings of new and developing areas of knowledge in mechanical engineering intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. 1 to 4 undergraduate hours. 1 to 4 graduate hours. May be repeated in the same or separate terms if topics vary to a maximum of 9 hours.",
+    "prerequisites": null,
+    "topics": [],
+    "credit_hours": "1 OR 2 OR 3 OR 4",
+    "embedding_text": "ME 498 Special Topics. Subject offerings of new and developing areas of knowledge in mechanical engineering intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. 1 to 4 undergraduate hours. 1 to 4 graduate hours. May be repeated in the same or separate terms if topics vary to a maximum of 9 hours."
+  },
+  {
+    "course_id": "ME 501",
+    "subject": "ME",
+    "title": "Combustion Fundamentals",
+    "raw_description": "Fundamentals of kinetic theory, transport phenomena, chemical equilibria, and reaction kinetics; flames, their gross properties, structure, and gas dynamics including oscillatory and turbulent burning; solid and liquid propellant combustion; one-dimensional detonation theory including structure and initiation; three-dimensional and other complex detonation waves; supersonic burning. Same as AE 538 . Prerequisite: AE 311 or ME 410 .",
+    "prerequisites": "AE 311 or ME 410",
+    "topics": [
+      "system dynamics"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 501 Combustion Fundamentals. Fundamentals of kinetic theory, transport phenomena, chemical equilibria, and reaction kinetics; flames, their gross properties, structure, and gas dynamics including oscillatory and turbulent burning; solid and liquid propellant combustion; one-dimensional detonation theory including structure and initiation; three-dimensional and other complex detonation waves; supersonic burning. Same as AE 538 . Prerequisite: AE 311 or ME 410 ."
+  },
+  {
+    "course_id": "ME 502",
+    "subject": "ME",
+    "title": "Thermal Systems",
+    "raw_description": "Steady-state simulation and optimization of thermal systems, dynamic performance, and probabilities in system design. Prerequisite: ME 402 .",
+    "prerequisites": "ME 402",
+    "topics": [
+      "optimization"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 502 Thermal Systems. Steady-state simulation and optimization of thermal systems, dynamic performance, and probabilities in system design. Prerequisite: ME 402 ."
+  },
+  {
+    "course_id": "ME 503",
+    "subject": "ME",
+    "title": "Design of IC Engines",
+    "raw_description": "Design of internal combustion engines, including gas forces, inertia loads, bearing analysis, torsional vibration, balance, lubrication, valve and cam design, and stress analysis of major engine components. Prerequisite: ME 403 .",
+    "prerequisites": "ME 403",
+    "topics": [
+      "internal combustion engines"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 503 Design of IC Engines. Design of internal combustion engines, including gas forces, inertia loads, bearing analysis, torsional vibration, balance, lubrication, valve and cam design, and stress analysis of major engine components. Prerequisite: ME 403 ."
+  },
+  {
+    "course_id": "ME 504",
+    "subject": "ME",
+    "title": "Multiphase Systems & Processes",
+    "raw_description": "Dynamics and thermodynamics of multiphase and multicomponent systems with special relevance to air-pollution control and energy conversion; relaxation phenomena; general motion of systems of disparate elemental masses; diffusion in gravitational and electric \ufb01elds, and boundary-layer motion with mass transport; dispersion and collection of particulate matter; transport with surface reactions. Prerequisite: ME 404 .",
+    "prerequisites": "ME 404",
+    "topics": [
+      "system dynamics",
+      "control systems",
+      "energy conversion"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 504 Multiphase Systems & Processes. Dynamics and thermodynamics of multiphase and multicomponent systems with special relevance to air-pollution control and energy conversion; relaxation phenomena; general motion of systems of disparate elemental masses; diffusion in gravitational and electric \ufb01elds, and boundary-layer motion with mass transport; dispersion and collection of particulate matter; transport with surface reactions. Prerequisite: ME 404 ."
+  },
+  {
+    "course_id": "ME 505",
+    "subject": "ME",
+    "title": "Carbon Capture and Storage",
+    "raw_description": "Carbon capture and storage is an important technology for reducing greenhouse gas emissions and mitigating global warming. This course will cover fundamentals for CO2 separation from syngas and post- combustion flue gas, the most advanced CO2 capture technologies including absorption, adsorption and membranes, CO2 compression and transportation, and CO2 sequestration in deep underground geological formations. Prerequisite: ME 200 ; MATH 285 OR MATH 441; Recommended: ME 404 .",
+    "prerequisites": "ME 200 ; MATH 285 OR MATH 441; Recommended: ME 404",
+    "topics": [],
+    "credit_hours": 4,
+    "embedding_text": "ME 505 Carbon Capture and Storage. Carbon capture and storage is an important technology for reducing greenhouse gas emissions and mitigating global warming. This course will cover fundamentals for CO2 separation from syngas and post- combustion flue gas, the most advanced CO2 capture technologies including absorption, adsorption and membranes, CO2 compression and transportation, and CO2 sequestration in deep underground geological formations. Prerequisite: ME 200 ; MATH 285 OR MATH 441; Recommended: ME 404 ."
+  },
+  {
+    "course_id": "ME 510",
+    "subject": "ME",
+    "title": "Advanced Gas Dynamics",
+    "raw_description": "Theoretical gas dynamics; fundamental laws and basic equations for subsonic, transonic, and supersonic steady and unsteady flow processes. Same as AE 510 . Prerequisite: ME 410 .",
+    "prerequisites": "ME 410",
+    "topics": [
+      "system dynamics"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 510 Advanced Gas Dynamics. Theoretical gas dynamics; fundamental laws and basic equations for subsonic, transonic, and supersonic steady and unsteady flow processes. Same as AE 510 . Prerequisite: ME 410 ."
+  },
+  {
+    "course_id": "ME 512",
+    "subject": "ME",
+    "title": "Physicochemical Hydrodynamics",
+    "raw_description": "Introduces basic concepts of molecular diffusion in liquids with interactions due to stationary or flowing fluid. Uncharged and charged solutions/dispersions/suspensions of molecules, macromolecules, and particles are considered in enclosed and porous media flows. Particular emphasis is placed on analysis using the equations that govern concentration and velocity \ufb01elds, flux and flow constitutive relations, driving forces, and transport properties and parameters. Applications are presented in energy, environmental, chemical, and biological systems. Prerequisite: ME 420 , ME 411 , CEE 442 , CEE 451 , CHBE 421 , or consent of instructor. ME - Mechanical Engineering 5",
+    "prerequisites": "ME 420 , ME 411 , CEE 442 , CEE 451 , CHBE 421 , or consent of instructor",
+    "topics": [
+      "system dynamics"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 512 Physicochemical Hydrodynamics. Introduces basic concepts of molecular diffusion in liquids with interactions due to stationary or flowing fluid. Uncharged and charged solutions/dispersions/suspensions of molecules, macromolecules, and particles are considered in enclosed and porous media flows. Particular emphasis is placed on analysis using the equations that govern concentration and velocity \ufb01elds, flux and flow constitutive relations, driving forces, and transport properties and parameters. Applications are presented in energy, environmental, chemical, and biological systems. Prerequisite: ME 420 , ME 411 , CEE 442 , CEE 451 , CHBE 421 , or consent of instructor. ME - Mechanical Engineering 5"
+  },
+  {
+    "course_id": "ME 520",
+    "subject": "ME",
+    "title": "Heat Conduction",
+    "raw_description": "Fundamentals of heat conduction in isotropic and anisotropic materials; methods of solution to steady and transient heat conduction problems in one, two, and three dimensions; internal heat sources; periodic flow of heat; problems involving phase change; approximate analytical techniques; numerical methods; study of current articles on the subject. Prerequisite: ME 420 .",
+    "prerequisites": "ME 420",
+    "topics": [
+      "conduction",
+      "engineering materials",
+      "numerical methods"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 520 Heat Conduction. Fundamentals of heat conduction in isotropic and anisotropic materials; methods of solution to steady and transient heat conduction problems in one, two, and three dimensions; internal heat sources; periodic flow of heat; problems involving phase change; approximate analytical techniques; numerical methods; study of current articles on the subject. Prerequisite: ME 420 ."
+  },
+  {
+    "course_id": "ME 521",
+    "subject": "ME",
+    "title": "Convective Heat Transfer",
+    "raw_description": "Fundamentals of convective heat transfer; calculation of heat transfer within ducts and over submerged objects for laminar and turbulent flow; natural convection; \ufb01lm condensation and boiling; liquid metals. Prerequisite: ME 411 .",
+    "prerequisites": "ME 411",
+    "topics": [
+      "heat transfer",
+      "convection"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 521 Convective Heat Transfer. Fundamentals of convective heat transfer; calculation of heat transfer within ducts and over submerged objects for laminar and turbulent flow; natural convection; \ufb01lm condensation and boiling; liquid metals. Prerequisite: ME 411 ."
+  },
+  {
+    "course_id": "ME 522",
+    "subject": "ME",
+    "title": "Thermal Radiation",
+    "raw_description": "Fundamentals of radiant-energy transport in absorbing and nonabsorbing media; pyrometry; applications to selected problems involving combined energy-transport mechanisms. Prerequisite: ME 420 .",
+    "prerequisites": "ME 420",
+    "topics": [
+      "thermal radiation"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 522 Thermal Radiation. Fundamentals of radiant-energy transport in absorbing and nonabsorbing media; pyrometry; applications to selected problems involving combined energy-transport mechanisms. Prerequisite: ME 420 ."
+  },
+  {
+    "course_id": "ME 523",
+    "subject": "ME",
+    "title": "Nanoscale Energy Transport",
+    "raw_description": "An advanced treatment of diverse transport phenomena at the nanometer scale involving solids, liquids and gases emphasizing common features in transport by molecules, electrons, phonons, photons, and other quasi- particles of interest, oriented toward applied research in the areas of nanoscale heat transfer and nanoscale energy conversion. Topics include intermolecular forces at surfaces and in the bulk, momentum and species transport in microfluidics, linear response theory, free molecular flow in gases, electron and phonon transport in crystals, Boltzmann equation and its moments, ballistic and diffusive transport, thermoelectric energy conversion, interfacial transport, energy transport in nanostructures and radiative transport in the near-\ufb01eld. Approved for letter and S/U grading.",
+    "prerequisites": null,
+    "topics": [
+      "heat transfer",
+      "energy conversion"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 523 Nanoscale Energy Transport. An advanced treatment of diverse transport phenomena at the nanometer scale involving solids, liquids and gases emphasizing common features in transport by molecules, electrons, phonons, photons, and other quasi- particles of interest, oriented toward applied research in the areas of nanoscale heat transfer and nanoscale energy conversion. Topics include intermolecular forces at surfaces and in the bulk, momentum and species transport in microfluidics, linear response theory, free molecular flow in gases, electron and phonon transport in crystals, Boltzmann equation and its moments, ballistic and diffusive transport, thermoelectric energy conversion, interfacial transport, energy transport in nanostructures and radiative transport in the near-\ufb01eld. Approved for letter and S/U grading."
+  },
+  {
+    "course_id": "ME 530",
+    "subject": "ME",
+    "title": "Fatigue Analysis",
+    "raw_description": "Fatigue analysis methods for the design of structures and components: stress-life, strain-life, and crack-propagation approaches; multiaxial and high-temperature fatigue; interrelationship among material properties, geometry, and design methodology appropriate for a wide range of mechanical engineering components. Prerequisite: ME 430 .",
+    "prerequisites": "ME 430",
+    "topics": [
+      "fatigue"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 530 Fatigue Analysis. Fatigue analysis methods for the design of structures and components: stress-life, strain-life, and crack-propagation approaches; multiaxial and high-temperature fatigue; interrelationship among material properties, geometry, and design methodology appropriate for a wide range of mechanical engineering components. Prerequisite: ME 430 ."
+  },
+  {
+    "course_id": "ME 531",
+    "subject": "ME",
+    "title": "Inelastic Design Methods",
+    "raw_description": "Material deformation under combined mechanical and thermal loading; constitutive equations and their application in engineering design and in inelastic \ufb01nite element methods; material and structural degradation under fatigue and creep conditions. Prerequisite: ME 471 and ME 430 .",
+    "prerequisites": "ME 471 and ME 430",
+    "topics": [
+      "fatigue",
+      "creep"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 531 Inelastic Design Methods. Material deformation under combined mechanical and thermal loading; constitutive equations and their application in engineering design and in inelastic \ufb01nite element methods; material and structural degradation under fatigue and creep conditions. Prerequisite: ME 471 and ME 430 ."
+  },
+  {
+    "course_id": "ME 540",
+    "subject": "ME",
+    "title": "Control System Theory & Design",
+    "raw_description": "Feedback control systems emphasizing state space techniques. Basic principles, modeling, analysis, stability, structural properties, optimization, and design to meet specifications. Same as ECE 515 and SE 522. Prerequisite: ECE 486.",
+    "prerequisites": "ECE 486",
+    "topics": [
+      "control systems"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 540 Control System Theory & Design. Feedback control systems emphasizing state space techniques. Basic principles, modeling, analysis, stability, structural properties, optimization, and design to meet specifications. Same as ECE 515 and SE 522. Prerequisite: ECE 486."
+  },
+  {
+    "course_id": "ME 543",
+    "subject": "ME",
+    "title": "Applied Control System Design & Analysis",
+    "raw_description": "Covers advanced design and analysis of control systems by state-space methods: classical control review, Laplace transforms, review of linear algebra (vector space, change of basis, diagonal and Jordan forms), linear dynamic systems (modes, stability, controllability, state feedback, observability, observers, canonical forms, output feedback, separation principle and decoupling), nonlinear dynamic systems (stability, Lyapunov methods). Frequency domain analysis of multivariable control systems. State space control system design methods: state feedback, observer feedback, pole placement, linear optimal control. Design exercises with CAD (computer-aided design) packages for engineering problems. Key to the course are the applied/real-world examples and CAD homework problems used to teach and reinforce the learnings of the material. Aerospace control system pose some of the most dif\ufb01cult and challenging control system design problems. In addition to designing feedback control system gains, the course teaches \ufb01ltering techniques needed in real-world implementation of flight controls systems. Credit will not given for both ME 543 and ECE 515 /ME 540 . Prerequisite: MATH 257 or MATH 415 or equivalent; ME 340 , TAM 412 or equivalent.",
+    "prerequisites": "MATH 257 or MATH 415 or equivalent; ME 340 , TAM 412 or equivalent",
+    "topics": [
+      "computer-aided design",
+      "control systems"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 543 Applied Control System Design & Analysis. Covers advanced design and analysis of control systems by state-space methods: classical control review, Laplace transforms, review of linear algebra (vector space, change of basis, diagonal and Jordan forms), linear dynamic systems (modes, stability, controllability, state feedback, observability, observers, canonical forms, output feedback, separation principle and decoupling), nonlinear dynamic systems (stability, Lyapunov methods). Frequency domain analysis of multivariable control systems. State space control system design methods: state feedback, observer feedback, pole placement, linear optimal control. Design exercises with CAD (computer-aided design) packages for engineering problems. Key to the course are the applied/real-world examples and CAD homework problems used to teach and reinforce the learnings of the material. Aerospace control system pose some of the most dif\ufb01cult and challenging control system design problems. In addition to designing feedback control system gains, the course teaches \ufb01ltering techniques needed in real-world implementation of flight controls systems. Credit will not given for both ME 543 and ECE 515 /ME 540 . Prerequisite: MATH 257 or MATH 415 or equivalent; ME 340 , TAM 412 or equivalent."
+  },
+  {
+    "course_id": "ME 544",
+    "subject": "ME",
+    "title": "Dynamic System Reliability",
+    "raw_description": "Reliability and dynamic performance evaluation for large-scale and complex systems; building on system-theoretic modeling, analysis, and design techniques. Design methods for reliability including architecture design and filter-based fault detection and isolation. Analytical methods for optimal redundancy allocation, sensitivity analysis methods for iterative system design, and other techniques for design optimization. Mechatronic systems used in aircraft and automotive, power electronic systems, and electrical power systems are examples of applications discussed. Same as ECE 554. Prerequisite: ECE 313 and ECE 515, or permission of instructor.",
+    "prerequisites": "ECE 313 and ECE 515",
+    "topics": [
+      "reliability",
+      "dynamic performance evaluation",
+      "design methods",
+      "fault detection",
+      "design optimization"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 544 Dynamic System Reliability. Reliability and dynamic performance evaluation for large-scale and complex systems; building on system-theoretic modeling, analysis, and design techniques. Design methods for reliability including architecture design and filter-based fault detection and isolation. Analytical methods for optimal redundancy allocation, sensitivity analysis methods for iterative system design, and other techniques for design optimization. Mechatronic systems used in aircraft and automotive, power electronic systems, and electrical power systems are examples of applications discussed. Same as ECE 554. Prerequisite: ECE 313 and ECE 515, or permission of instructor."
+  },
+  {
+    "course_id": "ME 546",
+    "subject": "ME",
+    "title": "Analysis of Nonlinear Systems",
+    "raw_description": "Nonlinear dynamics, vector fields and flows, Lyapunov stability theory, regular and singular perturbations, averaging, integral manifolds, input-output and input-to-state stability, and various design applications in control systems and robotics. Same as ECE 528 and SE 520. Prerequisite: ECE 515 and MATH 444 or MATH 447.",
+    "prerequisites": "ECE 515 and MATH 444 or MATH 447",
+    "topics": [
+      "control systems",
+      "robotics"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 546 Analysis of Nonlinear Systems. Nonlinear dynamics, vector fields and flows, Lyapunov stability theory, regular and singular perturbations, averaging, integral manifolds, input-output and input-to-state stability, and various design applications in control systems and robotics. Same as ECE 528 and SE 520. Prerequisite: ECE 515 and MATH 444 or MATH 447."
+  },
+  {
+    "course_id": "ME 547",
+    "subject": "ME",
+    "title": "Robust and Adaptive Control with Aerospace Applications",
+    "raw_description": "Teaches linear optimal based methods in robust control and observer- based nonlinear model reference adaptive control. Matlab is used in control system design assignments based on aerospace applications using design methods currently used in industry. Credit is not given toward graduation for ME 547 and AE 556 . Prerequisite: ME 543 , ECE 515 /ME 540 , ECE 517 or equivalent.",
+    "prerequisites": "ME 543 , ECE 515 /ME 540 , ECE 517 or equivalent",
+    "topics": [
+      "control systems"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 547 Robust and Adaptive Control with Aerospace Applications. Teaches linear optimal based methods in robust control and observer- based nonlinear model reference adaptive control. Matlab is used in control system design assignments based on aerospace applications using design methods currently used in industry. Credit is not given toward graduation for ME 547 and AE 556 . Prerequisite: ME 543 , ECE 515 /ME 540 , ECE 517 or equivalent."
+  },
+  {
+    "course_id": "ME 561",
+    "subject": "ME",
+    "title": "Convex Methods in Control",
+    "raw_description": "Use of convex optimization in analysis and control of dynamical systems; robust control methods and the use of semide\ufb01nite programming; linear matrix inequalities, operator theory, model reduction, H-2 and H- in\ufb01nity optimal control, S-procedure and integral quadratic constraints, structured singular value and mu-synthesis, and Markovian jump systems; applications in control design. Prerequisite: ECE 515 .",
+    "prerequisites": "ECE 515",
+    "topics": [
+      "control systems",
+      "optimization"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 561 Convex Methods in Control. Use of convex optimization in analysis and control of dynamical systems; robust control methods and the use of semide\ufb01nite programming; linear matrix inequalities, operator theory, model reduction, H-2 and H- in\ufb01nity optimal control, S-procedure and integral quadratic constraints, structured singular value and mu-synthesis, and Markovian jump systems; applications in control design. Prerequisite: ECE 515 ."
+  },
+  {
+    "course_id": "ME 562",
+    "subject": "ME",
+    "title": "Robust Adaptive Control",
+    "raw_description": "Mathematical foundation for synthesis and analysis of adaptive control systems: Lyapunov stability theory; methods of direct and indirect model reference adaptive control; recent methods, such as L1 adaptive control, that enable adaptive control with desired transient and steady-stage performance speci\ufb01cations. Prerequisite: Any of ECE 486 , ECE 515 , ECE 528 , GE 424, ME 460 .",
+    "prerequisites": "Any of ECE 486 , ECE 515 , ECE 528 , GE 424, ME 460",
+    "topics": [
+      "control systems"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 562 Robust Adaptive Control. Mathematical foundation for synthesis and analysis of adaptive control systems: Lyapunov stability theory; methods of direct and indirect model reference adaptive control; recent methods, such as L1 adaptive control, that enable adaptive control with desired transient and steady-stage performance speci\ufb01cations. Prerequisite: Any of ECE 486 , ECE 515 , ECE 528 , GE 424, ME 460 ."
+  },
+  {
+    "course_id": "ME 570",
+    "subject": "ME",
+    "title": "Nonlinear Solid Mech Design",
+    "raw_description": "Optimality conditions;finite element methods; design sensitivity analysis; nonlinear analysis; transient analysis; thermo-mechanical solid mechanics. Same as AE 524 . Prerequisite: One of AE 420 , CEE 470 , ME 471 , TAM 470; TAM 445, TAM 551. 6 ME - Mechanical Engineering",
+    "prerequisites": "One of AE 420 , CEE 470 , ME 471 , TAM 470; TAM 445, TAM 551",
+    "topics": [],
+    "credit_hours": 4,
+    "embedding_text": "ME 570 Nonlinear Solid Mech Design. Optimality conditions;finite element methods; design sensitivity analysis; nonlinear analysis; transient analysis; thermo-mechanical solid mechanics. Same as AE 524 . Prerequisite: One of AE 420 , CEE 470 , ME 471 , TAM 470; TAM 445, TAM 551. 6 ME - Mechanical Engineering"
+  },
+  {
+    "course_id": "ME 586",
+    "subject": "ME",
+    "title": "Mechanics of MEMS",
+    "raw_description": "Mechanics and dynamics of microelectromechanical systems (MEMS); scaling laws in electrostatics, magnetics, and fluidics; analytical models for thin-\ufb01lm growth and etching; effect of surface tension in small dimensions in relations to stability of MEMS during web fabrication; size effects on mechanical properties of MEMS materials; equations of motion for MEMS, involving coupled elastic and electric \ufb01elds that give rise to nonlinear dynamical behavior; Mathieu behavior and chaotic systems. Prerequisite: ME 485. ME 588 Nanoscale Fabrication and Characterization credit: 3 or 4 Hours. This course will provide a practical understanding of state-of-the- art, nanoscale fabrication and characterization approaches, and the fundamental principles behind these advanced techniques. Topics include top-down and bottom-up nanofabrication, characterization of structures smaller than the wavelength of light, quantum properties of nanomaterials that these techniques probe, and applications at the forefront of nano-research. Two-dimensional materials will be the case study of the broader challenges and opportunities of making and using nanoscale systems. Prerequisite: Any of ME 330 , CEE 300 , PHYS 460, MSE 304 , ECE 340 , CHEM 442 , or equivalent; Recommended: PHYS 214 or equivalent. ME 590 Seminar credit: 1 Hour. Presentation and discussion of signi\ufb01cant developments in mechanical engineering. Approved for S/U grading only. May be repeated in separate terms. Prerequisite: Restricted to Mechanical Engineering graduate students. ME 591 Interest Group Seminar credit: 1 Hour. Seminars on current topics in mechanical science and engineering. May be repeated in the same term if topics vary. May be repeated in separate terms. ME 592 Science Communication for Mechanical Engineers I credit: 2 Hours. Instruction and practice in written and oral science communication to technical and non-technical audiences, focusing primarily on presentations and written communication. Topics include storytelling, elevator pitches, graphical outlines, effective graphics, slide design, assertion-evidence based presentations, persuasion, writing mechanics, and selecting journals for publication. Prerequisite: Advanced composition or equivalent. 1-2 years of previous research experience or instructor approval. Recommended for Graduate students in years 2-4. ME 593 Science Communication for Mechanical Engineers II credit: 2 Hours. Instruction and practice in written and oral science communication to technical and non-technical audiences, focusing on data visualization and the effective design of scienti\ufb01c posters. Topics include literature reviews, NSF project summary development, data visualization techniques, scienti\ufb01c poster creation, effective plot and data representations, and the process of giving and receiving constructive feedback. Prerequisite: ME 592 .",
+    "prerequisites": "ME 485",
+    "topics": [
+      "engineering materials",
+      "system dynamics"
+    ],
+    "credit_hours": 4,
+    "embedding_text": "ME 586 Mechanics of MEMS. Mechanics and dynamics of microelectromechanical systems (MEMS); scaling laws in electrostatics, magnetics, and fluidics; analytical models for thin-\ufb01lm growth and etching; effect of surface tension in small dimensions in relations to stability of MEMS during web fabrication; size effects on mechanical properties of MEMS materials; equations of motion for MEMS, involving coupled elastic and electric \ufb01elds that give rise to nonlinear dynamical behavior; Mathieu behavior and chaotic systems. Prerequisite: ME 485. ME 588 Nanoscale Fabrication and Characterization credit: 3 or 4 Hours. This course will provide a practical understanding of state-of-the- art, nanoscale fabrication and characterization approaches, and the fundamental principles behind these advanced techniques. Topics include top-down and bottom-up nanofabrication, characterization of structures smaller than the wavelength of light, quantum properties of nanomaterials that these techniques probe, and applications at the forefront of nano-research. Two-dimensional materials will be the case study of the broader challenges and opportunities of making and using nanoscale systems. Prerequisite: Any of ME 330 , CEE 300 , PHYS 460, MSE 304 , ECE 340 , CHEM 442 , or equivalent; Recommended: PHYS 214 or equivalent. ME 590 Seminar credit: 1 Hour. Presentation and discussion of signi\ufb01cant developments in mechanical engineering. Approved for S/U grading only. May be repeated in separate terms. Prerequisite: Restricted to Mechanical Engineering graduate students. ME 591 Interest Group Seminar credit: 1 Hour. Seminars on current topics in mechanical science and engineering. May be repeated in the same term if topics vary. May be repeated in separate terms. ME 592 Science Communication for Mechanical Engineers I credit: 2 Hours. Instruction and practice in written and oral science communication to technical and non-technical audiences, focusing primarily on presentations and written communication. Topics include storytelling, elevator pitches, graphical outlines, effective graphics, slide design, assertion-evidence based presentations, persuasion, writing mechanics, and selecting journals for publication. Prerequisite: Advanced composition or equivalent. 1-2 years of previous research experience or instructor approval. Recommended for Graduate students in years 2-4. ME 593 Science Communication for Mechanical Engineers II credit: 2 Hours. Instruction and practice in written and oral science communication to technical and non-technical audiences, focusing on data visualization and the effective design of scienti\ufb01c posters. Topics include literature reviews, NSF project summary development, data visualization techniques, scienti\ufb01c poster creation, effective plot and data representations, and the process of giving and receiving constructive feedback. Prerequisite: ME 592 ."
+  },
+  {
+    "course_id": "ME 588",
+    "subject": "ME",
+    "title": "Nanoscale Fabrication and Characterization",
+    "raw_description": "This course will provide a practical understanding of state-of-the-art, nanoscale fabrication and characterization approaches, and the fundamental principles behind these advanced techniques. Topics include top-down and bottom-up nanofabrication, characterization of structures smaller than the wavelength of light, quantum properties of nanomaterials that these techniques probe, and applications at the forefront of nano-research. Two-dimensional materials will be the case study of the broader challenges and opportunities of making and using nanoscale systems. Prerequisite: Any of ME 330, CEE 300, PHYS 460, MSE 304, ECE 340, CHEM 442, or equivalent; Recommended: PHYS 214 or equivalent.",
+    "prerequisites": "Any of ME 330, CEE 300, PHYS 460, MSE 304, ECE 340, CHEM 442, or equivalent",
+    "topics": [
+      "nanofabrication",
+      "nano-research",
+      "nanoscale systems"
+    ],
+    "credit_hours": "3 OR 4",
+    "embedding_text": "ME 588 Nanoscale Fabrication and Characterization. This course will provide a practical understanding of state-of-the-art, nanoscale fabrication and characterization approaches, and the fundamental principles behind these advanced techniques. Topics include top-down and bottom-up nanofabrication, characterization of structures smaller than the wavelength of light, quantum properties of nanomaterials that these techniques probe, and applications at the forefront of nano-research. Two-dimensional materials will be the case study of the broader challenges and opportunities of making and using nanoscale systems. Prerequisite: Any of ME 330, CEE 300, PHYS 460, MSE 304, ECE 340, CHEM 442, or equivalent; Recommended: PHYS 214 or equivalent."
+  },
+  {
+    "course_id": "ME 590",
+    "subject": "ME",
+    "title": "Seminar",
+    "raw_description": "Presentation and discussion of significant developments in mechanical engineering. Approved for S/U grading only. May be repeated in separate terms. Prerequisite: Restricted to Mechanical Engineering graduate students.",
+    "prerequisites": "Restricted to Mechanical Engineering graduate students",
+    "topics": [],
+    "credit_hours": 1,
+    "embedding_text": "ME 590 Seminar. Presentation and discussion of significant developments in mechanical engineering. Approved for S/U grading only. May be repeated in separate terms. Prerequisite: Restricted to Mechanical Engineering graduate students."
+  },
+  {
+    "course_id": "ME 591",
+    "subject": "ME",
+    "title": "Interest Group Seminar",
+    "raw_description": "Seminars on current topics in mechanical science and engineering. May be repeated in the same term if topics vary. May be repeated in separate terms.",
+    "prerequisites": null,
+    "topics": [],
+    "credit_hours": 1,
+    "embedding_text": "ME 591 Interest Group Seminar. Seminars on current topics in mechanical science and engineering. May be repeated in the same term if topics vary. May be repeated in separate terms."
+  },
+  {
+    "course_id": "ME 592",
+    "subject": "ME",
+    "title": "Science Communication for Mechanical Engineers I",
+    "raw_description": "Instruction and practice in written and oral science communication to technical and non-technical audiences, focusing primarily on presentations and written communication. Topics include storytelling, elevator pitches, graphical outlines, effective graphics, slide design, assertion-evidence based presentations, persuasion, writing mechanics, and selecting journals for publication. Prerequisite: Advanced composition or equivalent. 1-2 years of previous research experience or instructor approval. Recommended for Graduate students in years 2-4.",
+    "prerequisites": "Advanced composition or equivalent. 1-2 years of previous research experience or instructor approval.",
+    "topics": [
+      "science communication"
+    ],
+    "credit_hours": 2,
+    "embedding_text": "ME 592 Science Communication for Mechanical Engineers I. Instruction and practice in written and oral science communication to technical and non-technical audiences, focusing primarily on presentations and written communication. Topics include storytelling, elevator pitches, graphical outlines, effective graphics, slide design, assertion-evidence based presentations, persuasion, writing mechanics, and selecting journals for publication. Prerequisite: Advanced composition or equivalent. 1-2 years of previous research experience or instructor approval. Recommended for Graduate students in years 2-4."
+  },
+  {
+    "course_id": "ME 593",
+    "subject": "ME",
+    "title": "Science Communication for Mechanical Engineers II",
+    "raw_description": "Instruction and practice in written and oral science communication to technical and non-technical audiences, focusing on data visualization and the effective design of scientific posters. Topics include literature reviews, NSF project summary development, data visualization techniques, scientific poster creation, effective plot and data representations, and the process of giving and receiving constructive feedback.",
+    "prerequisites": "Prerequisite: ME 592",
+    "topics": [
+      "science communication"
+    ],
+    "credit_hours": "",
+    "embedding_text": "ME 593 Science Communication for Mechanical Engineers II. Instruction and practice in written and oral science communication to technical and non-technical audiences, focusing on data visualization and the effective design of scientific posters. Topics include literature reviews, NSF project summary development, data visualization techniques, scientific poster creation, effective plot and data representations, and the process of giving and receiving constructive feedback."
+  },
+  {
+    "course_id": "ME 597",
+    "subject": "ME",
+    "title": "Independent Study",
+    "raw_description": "Independent study of advanced problems related to mechanical engineering. May be repeated in the same term or in separate terms if topics vary to a maximum of 12 hours. Prerequisite: Consent of instructor.",
+    "prerequisites": "Consent of instructor",
+    "topics": [],
+    "credit_hours": "1 OR 2 OR 3 OR 4",
+    "embedding_text": "ME 597 Independent Study. Independent study of advanced problems related to mechanical engineering. May be repeated in the same term or in separate terms if topics vary to a maximum of 12 hours. Prerequisite: Consent of instructor."
+  },
+  {
+    "course_id": "ME 598",
+    "subject": "ME",
+    "title": "Special Topics",
+    "raw_description": "Subject offerings of new and developing areas of knowledge in mechanical engineering intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. May be repeated in the same or separate terms if topics vary.",
+    "prerequisites": null,
+    "topics": [],
+    "credit_hours": "1 OR 2 OR 3 OR 4",
+    "embedding_text": "ME 598 Special Topics. Subject offerings of new and developing areas of knowledge in mechanical engineering intended to augment the existing curriculum. See Class Schedule or departmental course information for topics and prerequisites. May be repeated in the same or separate terms if topics vary."
+  },
+  {
+    "course_id": "ME 599",
+    "subject": "ME",
+    "title": "Thesis Research",
+    "raw_description": "Approved for S/U grading only. May be repeated in the same term or in separate terms.",
+    "prerequisites": null,
+    "topics": [],
+    "credit_hours": "0 OR 1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16",
+    "embedding_text": "ME 599 Thesis Research. Approved for S/U grading only. May be repeated in the same term or in separate terms."
+  }
+]
