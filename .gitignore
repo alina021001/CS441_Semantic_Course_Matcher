@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual envs (just in case)
+.venv/
+venv/
+
+# Model / embedding artifacts (large, can be regenerated)
+models/
+index/course_embeddings.npy
