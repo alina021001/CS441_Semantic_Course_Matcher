@@ -1,0 +1,233 @@
+[
+    {
+      "query_id": 1,
+      "query_text": "I want a senior-level ECE course on VLSI and CMOS integrated circuit design.",
+      "gold_course_ids": [
+        "ECE 425",
+        "ECE 444",
+        "ECE 483"
+      ]
+    },
+    {
+      "query_id": 2,
+      "query_text": "Looking for an ECE class on analog integrated circuit design and op-amp circuits.",
+      "gold_course_ids": [
+        "ECE 483",
+        "ECE 425"
+      ]
+    },
+    {
+      "query_id": 3,
+      "query_text": "I would like to learn about CMOS device physics and IC fabrication for chips.",
+      "gold_course_ids": [
+        "ECE 444",
+        "ECE 443"
+      ]
+    },
+    {
+      "query_id": 4,
+      "query_text": "Find me an upper-level ECE course on image and video processing.",
+      "gold_course_ids": [
+        "ECE 418"
+      ]
+    },
+    {
+      "query_id": 5,
+      "query_text": "Recommend an ECE lab course focused on embedded DSP implementation on hardware boards.",
+      "gold_course_ids": [
+        "ECE 420"
+      ]
+    },
+    {
+      "query_id": 6,
+      "query_text": "I'm interested in biosensors at the interface of electronics and biology.",
+      "gold_course_ids": [
+        "ECE 416",
+        "BIOE 416"
+      ]
+    },
+    {
+      "query_id": 7,
+      "query_text": "I want an applied machine learning course with hands-on projects.",
+      "gold_course_ids": [
+        "Computer Science 441",
+        "Computer Science 446"
+      ]
+    },
+    {
+      "query_id": 8,
+      "query_text": "Recommend an upper-level course that covers core machine learning theory and algorithms.",
+      "gold_course_ids": [
+        "Computer Science 446"
+      ]
+    },
+    {
+      "query_id": 9,
+      "query_text": "I'm looking for a class on natural language processing and text understanding.",
+      "gold_course_ids": [
+        "Computer Science 447",
+        "Computer Science 410"
+      ]
+    },
+    {
+      "query_id": 10,
+      "query_text": "Find me a course about search engines and text information retrieval systems.",
+      "gold_course_ids": [
+        "Computer Science 410"
+      ]
+    },
+    {
+      "query_id": 11,
+      "query_text": "I want to learn about large-scale distributed systems and consensus protocols.",
+      "gold_course_ids": [
+        "Computer Science 425"
+      ]
+    },
+    {
+      "query_id": 12,
+      "query_text": "Recommend a course on database systems and relational query processing.",
+      "gold_course_ids": [
+        "Computer Science 411"
+      ]
+    },
+    {
+      "query_id": 13,
+      "query_text": "I want a data science course that applies machine learning to civil engineering problems.",
+      "gold_course_ids": [
+        "CEE 492"
+      ]
+    },
+    {
+      "query_id": 14,
+      "query_text": "Recommend a transportation engineering course focused on traffic flow and capacity analysis.",
+      "gold_course_ids": [
+        "CEE 416",
+        "CEE 415"
+      ]
+    },
+    {
+      "query_id": 15,
+      "query_text": "Looking for a class on urban transportation planning and policy.",
+      "gold_course_ids": [
+        "CEE 417",
+        "CEE 418"
+      ]
+    },
+    {
+      "query_id": 16,
+      "query_text": "Find an environmental engineering course about water quality and treatment.",
+      "gold_course_ids": [
+        "CEE 437",
+        "CEE 330",
+        "CEE 433"
+      ]
+    },
+    {
+      "query_id": 17,
+      "query_text": "I would like a course on environmental systems modeling and optimization.",
+      "gold_course_ids": [
+        "CEE 434"
+      ]
+    },
+    {
+      "query_id": 18,
+      "query_text": "Recommend a construction engineering course about project planning and scheduling.",
+      "gold_course_ids": [
+        "CEE 421",
+        "CEE 420"
+      ]
+    },
+    {
+      "query_id": 19,
+      "query_text": "I want a mechanical engineering course on CAD and 3D modeling of parts.",
+      "gold_course_ids": [
+        "ME 170"
+      ]
+    },
+    {
+      "query_id": 20,
+      "query_text": "Recommend a class that covers basic thermodynamics for mechanical engineers.",
+      "gold_course_ids": [
+        "ME 200",
+        "ME 404"
+      ]
+    },
+    {
+      "query_id": 21,
+      "query_text": "I'm looking for an ME course on heat transfer and convection.",
+      "gold_course_ids": [
+        "ME 320",
+        "ME 411"
+      ]
+    },
+    {
+      "query_id": 22,
+      "query_text": "Find a mechanical engineering course on dynamics of mechanical systems.",
+      "gold_course_ids": [
+        "ME 340"
+      ]
+    },
+    {
+      "query_id": 23,
+      "query_text": "I want to learn about digital signal processing in mechanical systems.",
+      "gold_course_ids": [
+        "ME 360"
+      ]
+    },
+    {
+      "query_id": 24,
+      "query_text": "Recommend an introductory robotics course in mechanical engineering.",
+      "gold_course_ids": [
+        "ME 445"
+      ]
+    },
+    {
+      "query_id": 25,
+      "query_text": "I want a bioengineering course on biomedical imaging modalities such as MRI and CT.",
+      "gold_course_ids": [
+        "BIOE 380",
+        "BIOE 480",
+        "BIOE 424"
+      ]
+    },
+    {
+      "query_id": 26,
+      "query_text": "Recommend a course on computational tools and data analysis for biomedical data.",
+      "gold_course_ids": [
+        "BIOE 310",
+        "BIOE 210"
+      ]
+    },
+    {
+      "query_id": 27,
+      "query_text": "I'm interested in bioinstrumentation and medical device measurement systems.",
+      "gold_course_ids": [
+        "BIOE 414",
+        "BIOE 415",
+        "BIOE 420"
+      ]
+    },
+    {
+      "query_id": 28,
+      "query_text": "Find a course about biosensors and detection of biological signals.",
+      "gold_course_ids": [
+        "BIOE 416",
+        "ECE 416"
+      ]
+    },
+    {
+      "query_id": 29,
+      "query_text": "I want to study systems biology and quantitative modeling of biological networks.",
+      "gold_course_ids": [
+        "BIOE 432"
+      ]
+    },
+    {
+      "query_id": 30,
+      "query_text": "Recommend a bioengineering course focused on tissue engineering or regenerative medicine.",
+      "gold_course_ids": [
+        "BIOE 476"
+      ]
+    }
+  ]
+  

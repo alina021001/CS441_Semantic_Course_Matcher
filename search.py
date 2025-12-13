@@ -1,229 +1,341 @@
 # search.py
-from pathlib import Path
-from typing import List, Optional, Dict, Any
+"""
+CourseRecommender: bi-encoder semantic search over course catalog.
+
+This version supports:
+  - Default encoder: sentence-transformers/all-MiniLM-L6-v2
+  - Optional student encoder: models/student_biencoder_distilled
+  - Optional re-building of course embeddings when using a new encoder.
+
+Artifacts expected:
+
+  index/course_index_meta.json   # produced by build_index.py
+  models/course_embeddings.npy   # (optional) default embeddings for base model
+
+Usage example (baseline):
+
+  from search import CourseRecommender
+  rec = CourseRecommender()
+  results = rec.recommend_courses("VLSI CMOS design course", k=5)
+
+Usage example (distilled model):
+
+  rec_student = CourseRecommender(
+      encoder_model_name_or_path="models/student_biencoder_distilled",
+      embeddings_path=None,          # do not use precomputed base embeddings
+      rebuild_embeddings=True        # recompute embeddings with student
+  )
+  results = rec_student.recommend_courses("VLSI CMOS design course", k=5)
+"""
+
+from __future__ import annotations
 
 import json
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
 
-MODEL_DIR = Path("models")
-INDEX_DIR = Path("index")
 
-EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+ROOT_DIR = Path(__file__).resolve().parent
+DEFAULT_META_PATH = ROOT_DIR / "index" / "course_index_meta.json"
+DEFAULT_EMBEDDINGS_PATH = ROOT_DIR / "models" / "course_embeddings.npy"
+DEFAULT_ENCODER = "sentence-transformers/all-MiniLM-L6-v2"
+
+
+@dataclass
+class CourseRecord:
+    idx: int
+    course_id: str
+    title: str
+    subject: Optional[str]
+    course_number: Optional[int]
+    raw_description: Optional[str]
+    embedding_text: str
+    extra: Dict[str, Any]
 
 
 class CourseRecommender:
-    """
-    A simple semantic search engine over course descriptions.
-
-    It loads:
-      - pre-computed course embeddings (NumPy array)
-      - metadata for each course (JSON list of dicts)
-
-    And exposes:
-      - recommend_courses(): semantic retrieval with hard filters
-    """
-
-    def __init__(self):
-        meta_path = INDEX_DIR / "course_index_meta.json"
-        emb_path = MODEL_DIR / "course_embeddings.npy"
-
-        if not meta_path.exists():
-            raise FileNotFoundError(f"Metadata file not found: {meta_path}")
-        if not emb_path.exists():
-            raise FileNotFoundError(f"Embeddings file not found: {emb_path}")
-
-        with open(meta_path, "r", encoding="utf-8") as f:
-            self.meta: List[Dict[str, Any]] = json.load(f)
-
-        self.embeddings = np.load(emb_path)
-
-        # SentenceTransformer will embed user queries
-        self.model = SentenceTransformer(EMBEDDING_MODEL_NAME)
-
-    def _apply_hard_filters(
+    def __init__(
         self,
-        min_level: Optional[int],
-        subject_whitelist: Optional[List[str]],
-        max_level: Optional[int] = None,
-        exclude_title_keywords: Optional[List[str]] = None,
-    ) -> np.ndarray:
+        index_meta_path: Path = DEFAULT_META_PATH,
+        embeddings_path: Optional[Path] = DEFAULT_EMBEDDINGS_PATH,
+        encoder_model_name_or_path: str = DEFAULT_ENCODER,
+        rebuild_embeddings: bool = False,
+    ) -> None:
         """
-        Build a boolean mask over all courses based on hard constraints:
-
-        - min_level / max_level: course_number range filter
-        - subject_whitelist: list of allowed subjects (e.g., ["ECE", "Computer Science"])
-        - exclude_title_keywords: list of keywords that should NOT appear in the course title
-          (e.g., ["Individual Study", "Seminar", "Reading Group"])
+        Args:
+            index_meta_path: JSON with list of courses and embedding_text.
+            embeddings_path: .npy file with precomputed course embeddings.
+                             If None, embeddings will always be recomputed.
+            encoder_model_name_or_path: HuggingFace / local path for encoder.
+            rebuild_embeddings: If True, recompute embeddings even if
+                                embeddings_path exists.
         """
-        n = len(self.meta)
-        mask = np.ones(n, dtype=bool)
+        self.index_meta_path = Path(index_meta_path)
+        self.embeddings_path = Path(embeddings_path) if embeddings_path is not None else None
+        self.encoder_model_name_or_path = encoder_model_name_or_path
+        self.rebuild_embeddings = rebuild_embeddings
 
-        # Course level range filter: course_number in [min_level, max_level]
-        course_numbers = np.array([
-            m.get("course_number") if isinstance(m.get("course_number"), int) else -1
-            for m in self.meta
-        ])
+        self.records: List[CourseRecord] = []
+        self.embeddings: np.ndarray
 
-        if min_level is not None:
-            mask &= (course_numbers >= min_level)
-        if max_level is not None:
-            mask &= (course_numbers <= max_level)
+        self._load_metadata()
+        self._load_or_build_embeddings()
 
-        # Subject whitelist filter
-        if subject_whitelist is not None:
-            subjects = np.array([m.get("subject") for m in self.meta])
-            mask &= np.isin(subjects, subject_whitelist)
+    # ------------------------------------------------------------------
+    # Loading metadata and embeddings
+    # ------------------------------------------------------------------
 
-        # Exclude some course “types” based on title keywords
-        if exclude_title_keywords:
-            titles = np.array([m.get("title") or "" for m in self.meta])
-            lowered = np.char.lower(titles.astype(str))
-            for kw in exclude_title_keywords:
-                kw_lower = kw.lower()
-                # np.char.find returns -1 if not found; >= 0 means the keyword is present
-                contains_kw = np.char.find(lowered, kw_lower) >= 0
-                mask &= ~contains_kw
+    def _load_metadata(self) -> None:
+        if not self.index_meta_path.exists():
+            raise FileNotFoundError(
+                f"Course index metadata not found at {self.index_meta_path}. "
+                f"Please run build_index.py first."
+            )
 
-        return mask
+        with self.index_meta_path.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        records: List[CourseRecord] = []
+        for i, obj in enumerate(data):
+            course_id = str(obj.get("course_id", ""))
+            title = str(obj.get("title", ""))
+
+            subject = obj.get("subject")
+            course_number = obj.get("course_number")
+            raw_description = obj.get("raw_description")
+
+            # Prefer embedding_text; if missing, fallback to title + description
+            embedding_text = obj.get("embedding_text")
+            if not embedding_text:
+                parts = [title]
+                if raw_description:
+                    parts.append(raw_description)
+                embedding_text = ". ".join(parts)
+
+            # Keep any extra fields
+            extra = {
+                k: v
+                for k, v in obj.items()
+                if k
+                not in {
+                    "course_id",
+                    "title",
+                    "subject",
+                    "course_number",
+                    "raw_description",
+                    "embedding_text",
+                }
+            }
+
+            records.append(
+                CourseRecord(
+                    idx=i,
+                    course_id=course_id,
+                    title=title,
+                    subject=subject,
+                    course_number=course_number,
+                    raw_description=raw_description,
+                    embedding_text=embedding_text,
+                    extra=extra,
+                )
+            )
+
+        self.records = records
+
+    def _load_or_build_embeddings(self) -> None:
+        """
+        Load precomputed embeddings if appropriate, otherwise recompute
+        using the specified encoder model (and optionally save).
+        """
+        # Always initialize encoder here
+        self.model = SentenceTransformer(self.encoder_model_name_or_path)
+
+        if (
+            self.embeddings_path is not None
+            and self.embeddings_path.exists()
+            and not self.rebuild_embeddings
+        ):
+            # Fast path: load existing embeddings
+            self.embeddings = np.load(self.embeddings_path)
+            # Assume they are already normalized
+            return
+
+        # Otherwise, recompute embeddings from embedding_text
+        texts = [rec.embedding_text for rec in self.records]
+        print(
+            f"Building embeddings with encoder={self.encoder_model_name_or_path} "
+            f"for {len(texts)} courses..."
+        )
+        emb = self.model.encode(
+            texts,
+            batch_size=32,
+            show_progress_bar=True,
+            convert_to_numpy=True,
+            normalize_embeddings=True,
+        )
+        self.embeddings = emb
+
+        # Optionally save embeddings for faster reuse
+        if self.embeddings_path is not None:
+            self.embeddings_path.parent.mkdir(parents=True, exist_ok=True)
+            np.save(self.embeddings_path, self.embeddings)
+            print(f"Saved embeddings to {self.embeddings_path}")
+
+    # ------------------------------------------------------------------
+    # Recommendation API
+    # ------------------------------------------------------------------
 
     def recommend_courses(
         self,
         query_text: str,
         k: int = 5,
         min_level: Optional[int] = None,
-        subject_whitelist: Optional[List[str]] = None,
         max_level: Optional[int] = None,
+        subject_whitelist: Optional[List[str]] = None,
         exclude_title_keywords: Optional[List[str]] = None,
     ) -> List[Dict[str, Any]]:
         """
-        Main entry point: given a natural language query (in English),
-        return top-k most relevant courses after applying hard filters.
+        Retrieve top-k courses for a query using cosine similarity.
 
         Args:
-            query_text: user query in English (e.g., "I want a senior-level course on VLSI and CMOS design")
-            k: number of results to return
-            min_level: minimum course number (e.g., 400 for senior-level)
-            subject_whitelist: list of allowed subjects (e.g., ["ECE", "Computer Science"])
-            max_level: maximum course number (e.g., 499 to exclude grad-level courses)
-            exclude_title_keywords: list of title keywords to exclude, e.g.:
-                ["Individual Study", "Seminar", "Reading Group"]
+            query_text: user query in natural language.
+            k: number of results to return.
+            min_level: minimum course_number (e.g., 400 for 400-level).
+            max_level: maximum course_number (e.g., 499 for 400-level).
+            subject_whitelist: list of allowed subjects (e.g., ["ECE", "Computer Science"]).
+            exclude_title_keywords: lowercase keywords; if present in title, course is excluded.
 
         Returns:
-            A list of course dicts, each augmented with a "similarity" score.
+            A list of dicts, each containing course info and similarity score.
         """
-        # 1. Encode the query
-        query_emb = self.model.encode([query_text], normalize_embeddings=True)
-
-        # 2. Apply hard filters to the course pool
-        mask = self._apply_hard_filters(
-            min_level=min_level,
-            subject_whitelist=subject_whitelist,
-            max_level=max_level,
-            exclude_title_keywords=exclude_title_keywords,
-        )
-        filtered_embeddings = self.embeddings[mask]
-        if filtered_embeddings.shape[0] == 0:
+        if not self.records:
             return []
 
-        # 3. Compute cosine similarity in the filtered subset
-        sims = cosine_similarity(query_emb, filtered_embeddings)[0]  # shape: (num_filtered,)
+        # Encode query
+        q_emb = self.model.encode(
+            query_text, convert_to_numpy=True, normalize_embeddings=True
+        )
 
-        # 4. Select top-k indices within the filtered subset
-        topk_idx_local = np.argsort(-sims)[:k]
-        filtered_indices = np.where(mask)[0]
+        num_courses = len(self.records)
+        scores = np.zeros(num_courses, dtype=np.float32)
 
-        # 5. Map back to global indices and attach metadata + similarity
+        # Precompute mask for hard filters
+        mask = np.ones(num_courses, dtype=bool)
+
+        # Level filter
+        if min_level is not None or max_level is not None:
+            levels = np.array(
+                [
+                    rec.course_number if rec.course_number is not None else -1
+                    for rec in self.records
+                ]
+            )
+            if min_level is not None:
+                mask &= levels >= min_level
+            if max_level is not None:
+                mask &= levels <= max_level
+
+        # Subject whitelist
+        if subject_whitelist is not None:
+            subjects = np.array(
+                [rec.subject if rec.subject is not None else "" for rec in self.records],
+                dtype=object,
+            )
+            allowed = set(subject_whitelist)
+            mask &= np.array([subj in allowed for subj in subjects])
+
+        # Exclude certain keywords in title
+        if exclude_title_keywords:
+            lowered_keywords = [kw.lower() for kw in exclude_title_keywords]
+            title_mask = []
+            for rec in self.records:
+                title_l = rec.title.lower()
+                if any(kw in title_l for kw in lowered_keywords):
+                    title_mask.append(False)
+                else:
+                    title_mask.append(True)
+            mask &= np.array(title_mask, dtype=bool)
+
+        # If nothing passes filters, early return empty list
+        if not mask.any():
+            return []
+
+        # Compute cosine similarity for masked courses
+        valid_indices = np.where(mask)[0]
+        valid_embs = self.embeddings[valid_indices]  # (M, D)
+
+        # embeddings and query are unit-normalized, so cosine = dot product
+        scores_subset = valid_embs @ q_emb.astype(np.float32)
+        for idx_local, idx_global in enumerate(valid_indices):
+            scores[idx_global] = scores_subset[idx_local]
+
+        # Get top-k indices over all courses (scores for masked ones are 0 or -inf equivalent)
+        # To avoid masked-but-zero confusion, we sort only valid_indices.
+        k_eff = min(k, len(valid_indices))
+        top_local = np.argsort(-scores_subset)[:k_eff]
+        top_indices = valid_indices[top_local]
+
         results: List[Dict[str, Any]] = []
-        for local_idx in topk_idx_local:
-            global_idx = filtered_indices[local_idx]
-            course_info = self.meta[global_idx].copy()
-            course_info["similarity"] = float(sims[local_idx])
-            results.append(course_info)
+        for idx in top_indices:
+            rec = self.records[idx]
+            score = float(scores[idx])
+            item: Dict[str, Any] = {
+                "course_id": rec.course_id,
+                "title": rec.title,
+                "subject": rec.subject,
+                "course_number": rec.course_number,
+                "raw_description": rec.raw_description,
+                "embedding_text": rec.embedding_text,
+                "score": score,
+            }
+            # merge extra fields
+            item.update(rec.extra)
+            results.append(item)
 
         return results
 
-    @staticmethod
-    def pretty_print_results(results: List[Dict[str, Any]], header: str) -> None:
-        """
-        Helper for quick command-line demos.
-        """
-        print(header)
-        if not results:
-            print("  (no results found)\n")
-            return
 
-        for r in results:
-            cid = r.get("course_id", "N/A")
-            title = r.get("title", "N/A")
-            level = r.get("course_number", "N/A")
-            subj = r.get("subject", "N/A")
-            score = r.get("similarity", 0.0)
-
-            print(f"{cid} | {title} | level={level} | subject={subj} | score={score:.3f}")
-            emb_text_preview = (r.get("embedding_text") or "")[:140].replace("\n", " ")
-            print("   ", emb_text_preview, "...\n")
-
-
+# ----------------------------------------------------------------------
+# Simple CLI demo
+# ----------------------------------------------------------------------
 if __name__ == "__main__":
-    """
-    Simple English-only demo.
+    import argparse
 
-    Run this with:
-        source .venv/bin/activate
-        python search.py
-    """
-
-    recommender = CourseRecommender()
-
-    # Example 1: VLSI / CMOS senior-level ECE course
-    query1 = (
-        "I am looking for a senior-level ECE course on VLSI, "
-        "CMOS circuits, and integrated chip design."
+    parser = argparse.ArgumentParser(description="Semantic course search demo")
+    parser.add_argument("query", type=str, help="Query text")
+    parser.add_argument("--k", type=int, default=5, help="Number of results")
+    parser.add_argument(
+        "--student",
+        action="store_true",
+        help="Use distilled student bi-encoder (models/student_biencoder_distilled)",
     )
+    args = parser.parse_args()
 
-    results_vlsi = recommender.recommend_courses(
-        query_text=query1,
-        k=5,
-        min_level=400,           # senior-level and above
-        max_level=499,           # exclude graduate (500-level) courses
-        subject_whitelist=["ECE"],   # restrict to ECE courses only
-        exclude_title_keywords=[
-            "Individual Study",
-            "Seminar",
-            "Reading Group",
-            "Internship",
-            "Honors",
-        ],
-    )
+    if args.student:
+        model_path = ROOT_DIR / "models" / "student_biencoder_distilled"
+        rec = CourseRecommender(
+            encoder_model_name_or_path=str(model_path),
+            embeddings_path=None,
+            rebuild_embeddings=True,
+        )
+        print(f"Using student model from {model_path}")
+    else:
+        rec = CourseRecommender()
+        print(f"Using base encoder: {DEFAULT_ENCODER}")
 
-    recommender.pretty_print_results(results_vlsi, "\n=== Recommended VLSI / CMOS Courses ===")
+    results = rec.recommend_courses(args.query, k=args.k)
+    print(f"\nTop {len(results)} results:")
+    for r in results:
+        cid = r.get("course_id")
+        title = r.get("title")
+        subj = r.get("subject")
+        lvl = r.get("course_number")
+        score = r.get("score")
+        print(f"{cid} | {title} | {subj} | level={lvl} | score={score:.3f}")
 
-    # Example 2: data / machine learning course across multiple departments
-    query2 = (
-        "I would like to take an upper-level course about machine learning, "
-        "data science, or data analysis with programming."
-    )
-
-    # Note: subjects depend on your JSON data.
-    # For example, CS might have subject="Computer Science",
-    # ECE might be "ECE", BIOE might be "Bioengineering", etc.
-    results_ml = recommender.recommend_courses(
-        query_text=query2,
-        k=5,
-        min_level=300,   # 300-level and above
-        max_level=499,   # exclude graduate-level
-        subject_whitelist=None,  # allow all subjects for now
-        exclude_title_keywords=[
-            "Individual Study",
-            "Seminar",
-            "Reading Group",
-            "Internship",
-            "Honors",
-        ],
-    )
-
-    recommender.pretty_print_results(results_ml, "\n=== Recommended Data / ML Courses ===")
 
 
