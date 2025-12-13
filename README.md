@@ -3,18 +3,18 @@ CS 441 Group Project
 
 # Semantic Course Matcher: Project Planning Summary
 
-## ✅ Project Title
+## Project Title
 **Semantic Course Matcher: Natural Language Course Search and Recommendation System**
 
 ---
 
-## ✅ What is the goal of your project?
+## What is the goal of your project?
 
 The goal of this project is to build a proof-of-concept **natural language–based course search and recommendation system** that allows students to describe their learning goals in free-form text and receive the most semantically relevant university courses. The system aims to improve traditional keyword-based course search by using **machine learning–based semantic similarity**.
 
 ---
 
-## ✅ Describe the machine learning formulation
+## Describe the machine learning formulation
 
 This project is formulated as a **semantic information retrieval and ranking problem**.
 
@@ -22,7 +22,7 @@ Given a natural language query from a user and a corpus of course descriptions, 
 
 ---
 
-## ✅ What is the input (features)?
+## What is the input (features)?
 
 The input features include:
 
@@ -36,7 +36,7 @@ These texts are combined into a single **embedding representation** for each cou
 
 ---
 
-## ✅ What is the output (target)?
+## What is the output (target)?
 
 The output is a **ranked list of courses** ordered by their semantic similarity to the input query.
 
@@ -44,7 +44,7 @@ For evaluation, the target is whether the correct (ground-truth) courses appear 
 
 ---
 
-## ✅ How is the performance of the model measured?
+## How is the performance of the model measured?
 
 Model performance is measured using quantitative retrieval metrics:
 
@@ -56,7 +56,7 @@ These metrics evaluate how highly the correct courses are ranked in the recommen
 
 ---
 
-## ✅ Describe your data sources
+## Describe your data sources
 
 - **Course data**  
   Collected directly from **official university course catalog websites** (e.g., CS/ECE/STAT departments).  
@@ -70,7 +70,7 @@ Training, validation, and testing datasets may be drawn from the same annotated 
 
 ---
 
-## ✅ What data will be used for training?
+## What data will be used for training?
 
 Training data consists of:
 
@@ -81,7 +81,7 @@ These query–course pairs will be used to train or fine-tune semantic similarit
 
 ---
 
-## ✅ What data will be used for validation?
+## What data will be used for validation?
 
 The validation set is a held-out subset of the annotated query dataset used to:
 
@@ -92,7 +92,7 @@ Validation queries come from the same manually annotated source as the training 
 
 ---
 
-## ✅ What data will be used for testing?
+## What data will be used for testing?
 
 The test set consists of a separate set of manually annotated user queries that are **never used during training or validation**.
 
@@ -100,7 +100,7 @@ This dataset is used only for final evaluation and performance reporting using *
 
 ---
 
-## ✅ What machine learning approaches or models will you compare?
+## What machine learning approaches or models will you compare?
 
 We will compare the following models:
 
