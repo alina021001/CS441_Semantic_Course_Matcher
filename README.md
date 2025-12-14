@@ -32,7 +32,8 @@ The input features include:
 - **Course text data**, including:
   - Course title  
   - Official course description  
-  - (Optional) Syllabus topics / keywords  
+  - topics / keywords
+  - etc
 
 These texts are combined into a single **embedding representation** for each course.
 
@@ -48,7 +49,6 @@ Model performance is measured using quantitative retrieval metrics:
 
 - **Top-K Accuracy (Top-5 Accuracy)**
 - **Mean Reciprocal Rank (MRR)**
-- **(Optional)** Normalized Discounted Cumulative Gain (NDCG@K)
 
 These metrics evaluate how highly the correct courses are ranked in the recommendation list.
 
@@ -100,6 +100,3 @@ We will compare the following models:
 
 3. **Sentence Embedding Models**  
    e.g., **Sentence-BERT / MiniLM**, used for semantic similarity scoring.
-
-4. **(Optional)** A lightweight supervised ranking model  
-   Using features such as TF-IDF similarity, embedding similarity, and text length signals.
