@@ -9,6 +9,8 @@ CS 441 Group Project
 ---
 
 ## Group Member
+| Name | NetID |
+| ------------- | ------------- |
 | Zishuo Yu| zishuoy2|
 | Peiling(Alina) Wu| peiling4|
 | Liyang Wan| liyangw4|
