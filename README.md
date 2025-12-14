@@ -6,8 +6,6 @@ CS 441 Group Project
 ## Project Title
 **Semantic Course Matcher: Natural Language Course Search and Recommendation System**
 
----
-
 ## Group Member
 | Name | NetID |
 | ------------- | ------------- |
@@ -20,15 +18,11 @@ CS 441 Group Project
 
 The goal of this project is to build a proof-of-concept **natural language–based course search and recommendation system** that allows students to describe their learning goals in free-form text and receive the most semantically relevant university courses. The system aims to improve traditional keyword-based course search by using **machine learning–based semantic similarity**.
 
----
-
 ## Describe the machine learning formulation
 
 This project is formulated as a **semantic information retrieval and ranking problem**.
 
 Given a natural language query from a user and a corpus of course descriptions, the model computes the semantic relevance between the query and each course and returns a ranked list of recommended courses.
-
----
 
 ## What is the input (features)?
 
@@ -42,15 +36,11 @@ The input features include:
 
 These texts are combined into a single **embedding representation** for each course.
 
----
-
 ## What is the output (target)?
 
 The output is a **ranked list of courses** ordered by their semantic similarity to the input query.
 
 For evaluation, the target is whether the correct (ground-truth) courses appear in the **Top-K ranked results**.
-
----
 
 ## How is the performance of the model measured?
 
@@ -61,8 +51,6 @@ Model performance is measured using quantitative retrieval metrics:
 - **(Optional)** Normalized Discounted Cumulative Gain (NDCG@K)
 
 These metrics evaluate how highly the correct courses are ranked in the recommendation list.
-
----
 
 ## Describe your data sources
 
@@ -76,8 +64,6 @@ These metrics evaluate how highly the correct courses are ranked in the recommen
 
 Training, validation, and testing datasets may be drawn from the same annotated query pool and split using **cross-validation** or a fixed **train/validation/test** division.
 
----
-
 ## What data will be used for training?
 
 Training data consists of:
@@ -86,8 +72,6 @@ Training data consists of:
 - Corresponding ground-truth relevant course IDs  
 
 These query–course pairs will be used to train or fine-tune semantic similarity or ranking models if applicable.
-
----
 
 ## What data will be used for validation?
 
@@ -98,15 +82,11 @@ The validation set is a held-out subset of the annotated query dataset used to:
 
 Validation queries come from the same manually annotated source as the training data.
 
----
-
 ## What data will be used for testing?
 
 The test set consists of a separate set of manually annotated user queries that are **never used during training or validation**.
 
 This dataset is used only for final evaluation and performance reporting using **Top-K Accuracy** and **MRR**.
-
----
 
 ## What machine learning approaches or models will you compare?
 
@@ -123,6 +103,3 @@ We will compare the following models:
 
 4. **(Optional)** A lightweight supervised ranking model  
    Using features such as TF-IDF similarity, embedding similarity, and text length signals.
-
----
-
