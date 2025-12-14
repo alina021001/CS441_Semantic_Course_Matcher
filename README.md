@@ -8,6 +8,12 @@ CS 441 Group Project
 
 ---
 
+## Group Member
+| Zishuo Yu| zishuoy2|
+| Peiling(Alina) Wu| peiling4|
+| Liyang Wan| liyangw4|
+| Yuqing Zhang| yuqing20|
+
 ## What is the goal of your project?
 
 The goal of this project is to build a proof-of-concept **natural language–based course search and recommendation system** that allows students to describe their learning goals in free-form text and receive the most semantically relevant university courses. The system aims to improve traditional keyword-based course search by using **machine learning–based semantic similarity**.
